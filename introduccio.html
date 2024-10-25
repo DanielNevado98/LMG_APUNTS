@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ca">
     <head>
+        <!-- Metadades de la pàgina-->
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Dades, HTML5">
@@ -18,7 +19,10 @@
         <center>
             <h1>Introducció - Analisi i interpretació de fragments de codi</h1>
         </center>
+         <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
         <a href="index.html"><h5>TORNA AL INDEX PRINCIPAL</h5></a>
+        <!-- index de la pàgina amb enllaços a cada tema particularment-->
+        <div>
         <h2 id="index1">INDEX </h2>
         <ol>
             <a href="#dades"><li>Que són les dades?</li></a>
@@ -57,6 +61,10 @@
                 </ol>
 
         </ol>
+    </div>
+    <div>
+        <!-- A partir d'aqui comença tota la teoria donada en els temes-->
+         <hr>
         <h2 id="dades">Que son les dades?</h2>
                 <p>
                     Les dades <strong>són representacions d'aspectes del món real</strong> que es recullen per fer càlculs, mostrar-les, organitzar-les, etc. L'objectiu és que posteriorment algú pugui fer alguna cosa amb elles, com prende decisions o generar noves dades
@@ -88,7 +96,8 @@
                 </p>
             <a href="#index1">Torna al INDEX</a>
 
-            <h2 id="emmagatzematge">Emmagatzematge de les dades</h2>
+        <hr>       
+        <h2 id="emmagatzematge">Emmagatzematge de les dades</h2>
             <br><img src="almacen.png" alt="Imatge almacenaje" width="250" height="250">
             <h3 id="infointro">Informacio introductoria</h3>
                 <p>
@@ -129,7 +138,8 @@
                 </p>
             <a href="#index1">Torna al INDEX</a>
 
-            <h2 id="llenguatgemarques">Llenguatges de Marques</h2>
+        <hr>           
+        <h2 id="llenguatgemarques">Llenguatges de Marques</h2>
             <h3 id="introllenguatges">Introducció als Llenguatges de Marques</h3>
                 <p>
                     <strong>Els llenguatges de marques són sistemes de codificació que permeten estructurar i presentar informació de manera que sigui comprensible</strong> tant per a humans com per a màquines. Aquests llenguatges utilitzen etiquetes per identificar diferents parts del contingut, facilitant la seva <b>interpretació i manipulació.</b>
@@ -143,23 +153,24 @@
                 <img src="CLASIFICACION.PNG" alt="Imatge de clasificacio llenguatges de marques" width="500" height="200">  
                 <br> 
             <a href="#index1">Torna al INDEX</a>
-
-            <h2 id="estructurairegles">Estructura i regles sintàctiques</h2>
+        <hr>           
+        <h2 id="estructurairegles">Estructura i regles sintàctiques</h2>
             <h3 id="html">HTML</h3>
-                <img src="html.PNG" alt="Logo html" width="100" height="100">
+            <img src="html.PNG" alt="Logo html" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
                 Cada etiqueta d'obertura (&lt;h1&gt;) ha de tenir la seva corresponent etiqueta de tancament
                 <br>L'estructura ha de seguir un ordre correcte: dins del body no poden haver-hi elemtes de capçalera (&lt;head&gt;)
-                <img src="estructurahtml.PNG">
+                <br><img src="estructurahtml.PNG">
                 <p><b>Exemple document mal format</b></p>
                 Si un document HTML està mal format, pot provocar que la p'agina web es mostri incorrectament o que algunes parts no es visualitzin.
-                <img src="htmlmalformat.PNG">
+                <br><img src="htmlmalformat.PNG">
                 <p><b>Espais de noms</b></p>
                 En <strong>HTML</strong>, els espais de noms no són tan utilitzats com en XML, però en casos d'embedat de llenguatges o tecnologia externa, com <strong>SVG</strong>
                 <br>Avantatge: L'ús de l'espai de noms xmlns per a SVG permet que el navegador sàpiga que el contingut dins d'aquestes etiquetes és gràfic vectorial, no HTML.
                 <br><img src="espaidenomshtml.PNG">
+
             <h3 id="xml">XML</h3>
-                <img src="xml.PNG" alt="Logo xml" width="100" height="100">
+            <img src="xml.PNG" alt="Logo xml" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
                 Les etiquetes han d'estar correctament tancades
                 <br>Els elements han d'estar correctament imbricats
@@ -167,13 +178,14 @@
                 <br><img src="estructuraxml.PNG">
                 <p><b>Exemple document mal format</b></p>
                 Un document XML mal format pot impedir completament que sigui processat, ja que els parsers XML són molt estrictes.
-                <img src="xmlmalformat.PNG">
+                <br><img src="xmlmalformat.PNG">
                 <p><b>Espais de noms</b></p>
                 Els espais de noms en XML són especialment útils quan es combinen dades de diverses fonts.
                 <br>Avantatge: Diferencia elements d'una mateixa estructura que podrien tenir el mateix nom, evitant conflictes en combinar dades.
                 <br><img src="espaidenomxml.PNG">
+
             <h3 id="csv">CSV</h3>
-                <img src="csv.PNG" alt="Logo csv" width="100" height="100">
+            <img src="csv.PNG" alt="Logo csv" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
                 Cada linia representa u nregistre de dades.
                 <br>Els camps estan separats per comes (o un altre delimitador especial)
@@ -182,6 +194,7 @@
                 <p><b>Exemple document mal format</b></p>
                 Si un document CSV no segueix la mateixa estructura per a totes les línies, les dades es processaran de manera incorrecta.
                 <br><img src="csvmalformat.PNG">
+
             <h3 id="json">JSON</h3>
             <img src="json.PNG" alt="Logo json" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
@@ -191,11 +204,12 @@
                 <br><img src="estructurajson.PNG">
                 <p><b>Exemple document mal format</b></p>
                 Si un document JSON està mal format, les aplicacions no podran carregar ni processar les dades
-                <img src="jsonmalformat.PNG">
+                <br><img src="jsonmalformat.PNG">
                 <p><b>Espais de noms</b></p>
                 El JSON tampoc utilitza espais de noms com l'XML, però els objectes poden simular-ne l'ús utilitzant claus dins d'estrcutures imbricades.
                 <br>Avantatge: En lloc de tenir conflictes de noms, els objectes permeten mantenir separats diferentes conjunts de dades en un sol document.
-                <img src="espaidenomsjson.PNG">
+                <br><img src="espaidenomsjson.PNG">
+</div>
             <a href="#index1">Torna al INDEX</a>
     </body>
 </html>

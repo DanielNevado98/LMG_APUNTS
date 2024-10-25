@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head> 
+    <!-- Metadades de la pagina -->
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Dades, HTML5">
@@ -19,7 +20,10 @@
     <center>
         <h1>Apunts d'HTML bàsics</h1>
     </center>
+    <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
     <a href="index.html"><h5>TORNA AL INDEX PRINCIPAL</h5></a>
+    <!-- index de la pàgina amb enllaços a cada tema particularment-->
+    <div>
     <h2 id="index2">INDEX</h2>
     <ol>
     <a href="#intro"><li>Introducció a l'HTML</li></a>
@@ -51,6 +55,9 @@
                 <a href="#atributstaula"><li>Atributs de Taula</li></a>
             </ol>
     </ol>
+</div>
+<div>
+    <hr>
     <h2 id="intro">Introducció a L'HTML</h2>
         <p>
             <strong>HTML (HyperText Markup Language)</strong> és el llenguatge de marques per crear pàgines web.
@@ -65,21 +72,21 @@
             <br><img src="estructurabasicahtml.PNG"><br>
         </p>
     <a href="#index2">Torna al INDEX</a>
-
+    <hr> 
     <h2 id="etiquetesbasiques">Etiquetes bàsiques</h2>
-            <p>
-                <strong>&lt;title&gt;</strong>
-                <br>Defineix el <b>títol</b> que apareix a la pestanya del navegador o als resultats dels cercadors.
-                <br><strong>&lt;h1&gt; a &lt;h6&gt;</strong>
-                <br>Utilitzats per definir títols i subtítols a la pàgina web.
-                <br><strong>&lt;p&gt;</strong>
-                <br>S'utilitza per definir blocs de text o paràgrafs.
-                <br><strong>& nbsp</strong>
-                <br>Inserta un espai en blanc que no es trenca entre línies. 
-                <br><img src="etiqueteshtml.PNG"><br>
+        <p>
+            <strong>&lt;title&gt;</strong>
+            <br>Defineix el <b>títol</b> que apareix a la pestanya del navegador o als resultats dels cercadors.
+            <br><strong>&lt;h1&gt; a &lt;h6&gt;</strong>
+            <br>Utilitzats per definir títols i subtítols a la pàgina web.
+            <br><strong>&lt;p&gt;</strong>
+            <br>S'utilitza per definir blocs de text o paràgrafs.
+            <br><strong>& nbsp</strong>
+            <br>Inserta un espai en blanc que no es trenca entre línies. 
+            <br><img src="etiqueteshtml.PNG"><br>
             </p>
     <a href="#index2">Torna al INDEX</a>
-
+    <hr>
     <h2 id="elementsanidament">Elements HTML i Anidament</h2>
         <h3 id="diferencies">Diferencia entre Etiquetes i elements</h3>
             <p>
@@ -97,44 +104,43 @@
             <br><img src="anidament html.PNG"><br>
             </p>
         <a href="#index2">Torna al INDEX</a>
-
-        <h2 id="atributshtml">Atributs HTML</h2>
-            <p>Els atributs en <strong>HTML</strong> són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen el format <b>nom="valor"</b>.
-            <br><img src="atributshtml.PNG"><br>
+    <hr>
+    <h2 id="atributshtml">Atributs HTML</h2>
+        <p>Els atributs en <strong>HTML</strong> són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen el format <b>nom="valor"</b>.
+        <br><img src="atributshtml.PNG"><br>
+        </p>
+        <a href="#index2">Torna al INDEX</a>
+    <hr>
+    <h2 id="textformatat">Text formatat</h2>
+        <p>
+            <strong>&lt;b&gt; i &lt;strong&gt;</strong>: Negreta
+            <br><strong>&lt;b&gt;</strong>: <b>Aplica negreta sense indicar cap importància semàntica.</b>
+            <br><strong>&lt;strong&gt;</strong>: <strong>Aplica negreta i indica que el text és important.</strong>
+            <br><strong>&lt;i&gt; i &lt;em&gt;</strong>: Cursiva
+            <br><strong>&lt;i&gt;</strong>: <i>Aplica cursiva sense implicar èmfasi.</i>
+            <br><strong>&lt;em&gt;</strong>: <em>Aplica cursiva amb èmfasi, indicant que el text té importància.</em>
+            <br><strong>&lt;u&gt;</strong>: <u>S'utilitza per subratllar text.</u>
+            <br><strong>&lt;strike&gt; o &lt;s&gt;</strong>: <strike>Aplica un ratllat al text, indicant que està esborrat o ja no és rellevant.</strike>
+            <br><strong>&lt;sup&gt;</strong>: <sup>Superíndex, s'utilitza per elevar el text, com en exponents matemàtics.</sup>
+            <br><strong>&lt;sub&gt;</strong>: <sub>Subíndex, s'utilitza per posar text en la posició de subíndex, sovint utilitzat en fórmules químiques.</sub>
+            <br><img src="textformatathtml.PNG"><br>
+        </p>
+        <a href="#index2">Torna al INDEX</a>
+    <hr>
+    <h2 id="comenthtml">Comentaris en HTML</h2>
+        <p>
+            Els comentaris en <strong>HTML</strong> són <b>línies de text que s'afegeixen al codi per deixar notes o explicacions</b>, però que no són visibles per als usuaris finals en la pàgina web.
+            <br>S'utilitzen per <b>ajudar els desenvolupadors a documentar el codi</b>, descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.
+            <br>Els comentaris <b>no afecten el rendiment ni la visualització de la pàgina en el navegador.</b>
+            <br><img src="comentarishtml.PNG"><br>
             </p>
         <a href="#index2">Torna al INDEX</a>
-
-        <h2 id="textformatat">Text formatat</h2>
-            <p>
-                <strong>&lt;b&gt; i &lt;strong&gt;</strong>: Negreta
-                <br><strong>&lt;b&gt;</strong>: <b>Aplica negreta sense indicar cap importància semàntica.</b>
-                <br><strong>&lt;strong&gt;</strong>: <strong>Aplica negreta i indica que el text és important.</strong>
-                <br><strong>&lt;i&gt; i &lt;em&gt;</strong>: Cursiva
-                <br><strong>&lt;i&gt;</strong>: <i>Aplica cursiva sense implicar èmfasi.</i>
-                <br><strong>&lt;em&gt;</strong>: <em>Aplica cursiva amb èmfasi, indicant que el text té importància.</em>
-                <br><strong>&lt;u&gt;</strong>: <u>S'utilitza per subratllar text.</u>
-                <br><strong>&lt;strike&gt; o &lt;s&gt;</strong>: <strike>Aplica un ratllat al text, indicant que està esborrat o ja no és rellevant.</strike>
-                <br><strong>&lt;sup&gt;</strong>: <sup>Superíndex, s'utilitza per elevar el text, com en exponents matemàtics.</sup>
-                <br><strong>&lt;sub&gt;</strong>: <sub>Subíndex, s'utilitza per posar text en la posició de subíndex, sovint utilitzat en fórmules químiques.</sub>
-                <br><img src="textformatathtml.PNG"><br>
-            </p>
-        <a href="#index2">Torna al INDEX</a>
-
-        <h2 id="comenthtml">Comentaris en HTML</h2>
-            <p>
-                Els comentaris en <strong>HTML</strong> són <b>línies de text que s'afegeixen al codi per deixar notes o explicacions</b>, però que no són visibles per als usuaris finals en la
-                pàgina web.
-                <br>S'utilitzen per <b>ajudar els desenvolupadors a documentar el codi</b>, descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.
-                <br>Els comentaris <b>no afecten el rendiment ni la visualització de la pàgina en el navegador.</b>
-                <br><img src="comentarishtml.PNG"><br>
-            </p>
-        <a href="#index2">Torna al INDEX</a>
-
-        <h2 id="insertimg">Inserció d'imatges</h2>
-            <p>
-                <strong>L'etiqueta &lt;img&gt; s'utilitza per inserir imatges en una pàgina web.</strong>
-                <br><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.
-                <br>És essencial proporcionar informació sobre la imatge perquè es mostri correctament i per millorar l'accessibilitat.
+    <hr>
+    <h2 id="insertimg">Inserció d'imatges</h2>
+        <p>
+            <strong>L'etiqueta &lt;img&gt; s'utilitza per inserir imatges en una pàgina web.</strong>
+            <br><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.
+            <br>És essencial proporcionar informació sobre la imatge perquè es mostri correctament i per millorar l'accessibilitat.
                 <ol>
                     <b>Atributs d'imatges</b>
                     <li><strong>Src (source)</strong></li>
@@ -158,12 +164,12 @@
             </p>
         <a href="#index2">Torna al INDEX</a>
 
-        <h2 id="enllaços">Enllaços</h2>
-            <p>
-                L'etiqueta <strong>&lt;a&gt;</strong> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa
-                    pàgina o qualsevol altre recurs.
-                <br>L'element essencial per als enllaços és l'atribut <strong>href que defineix l'URL a la qual redirigeix l'usuari.</strong>
-                <br>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser <b>redirigits.</b>
+    <hr>
+    <h2 id="enllaços">Enllaços</h2>
+        <p>
+            L'etiqueta <strong>&lt;a&gt;</strong> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa pàgina o qualsevol altre recurs.
+            <br>L'element essencial per als enllaços és l'atribut <strong>href que defineix l'URL a la qual redirigeix l'usuari.</strong>
+            <br>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per ser <b>redirigits.</b>
                 <ol>
                     <strong>Atributs d'enllaços</strong>
                     <li><strong>href (hypertext reference):</strong></li>
@@ -185,6 +191,7 @@
             </p>
     <a href="#index2">Torna al INDEX</a>
 
+    <hr>
     <h2 id="llisteshtml">Llistes</h2>
         <h3 id="llistesnoord">LListes no ordenades &lt;ul&gt;</h3>
             <p>
@@ -216,6 +223,7 @@
                 </p>
     <a href="#index2">Torna al INDEX</a>
 
+    <hr>
     <h2 id="taules">Taules</h2>
         <h3 id="etiquetes">Etiquetes</h3>
         <p>
@@ -240,6 +248,6 @@
             <br><strong>Cellspacing:</strong> Controla l'espai entre les cel·les de la taula.
         </p>
     <a href="#index2">Torna al INDEX</a>
-
+</div>
 </body>
 </html>

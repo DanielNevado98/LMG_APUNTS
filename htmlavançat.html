@@ -19,8 +19,11 @@
     <center>
         <h1>Apunts d'HTML Avançat</h1>
     </center>
+    <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
     <a href="index.html"><h5>TORNA AL INDEX PRINCIPAL</h5></a>
     <h2 id="index3">INDEX</h2>
+    <!-- index de la pàgina amb enllaços a cada tema particularment-->
+     <div>
     <ol>
     <a href="#introhtml5"><li>HTML5 i la seva Evolució</li></a>
     <a href="#etiqueteshtml5"><li>Etiquetes en HTML5</li></a>
@@ -33,6 +36,7 @@
             <a href="#textarea"><li>Etiqueta &lt;textarea&gt;</li></a>
             <a href="#multiple"><li>atribut "multiple"</li></a>
             <a href="#button"><li>Etiqueta &lt;button&gt;</li></a>
+            <a href="buttonimg"><li>Botó amb imatge (CONCEPTE NOU AFEGIT)</li></a>
             <a href="#radiobuttons"><li>Radio Buttons</li></a>
             <a href="#checkboxes"><li>Checkboxes</li></a>
         </ol>
@@ -56,26 +60,31 @@
     </ol>
     <a href="#metadades"><li>Metadades</li></a>
     </ol>
-
+</div>
+<div>
+<!-- A partir d'aqui comença tota la teoria donada en els temes-->
+    <hr>
     <h2 id="introhtml5">HTML5 i la seva Evolució</h2>
-    <p>
-        És una evolució important respecte a les versions anteriors d'HTML, <b>introduint noves etiquetes i funcionalitats que permeten una millor gestió</b> del contingut multimèdia, formularis avançats, i millores en la semàntica de la pàgina web.
-    </p>
-    <h3 id="etiqueteshtml5">Etiquetes en HTML5</h3>
-    <p>
-        <strong>&lt;section&gt;</strong>: Ús per a agrupar contingut relacionat dins d'una pàgina.
-        <strong>&lt;article&gt;</strong><br>: Representa un bloc de contingut autònom, com un article d'un blog, una notícia o un post que pot existir independentment del lloc web.
-        <strong>&lt;aside&gt;</strong><br>: Defineix contingut relacionat amb el contingut principal però no essencial. Normalment s'utilitza per a barres laterals, anuncis, o informació complementària.
-        <strong>&lt;header&gt;</strong><br> i &lt;footer&gt;: Etiquetes per a definir les capçaleres i peus de pàgina.
-        <strong>&lt;nav&gt;</strong><br>: Específica per a les barres de navegació del lloc web.
-        <strong>&lt;figure&gt;</strong><br> i &lt;figcaption&gt;: Agrupa elements multimèdia (com imatges o vídeos) i les seves descripcions.
-        <br><img src="imphtml5.PNG">
+        <p>
+            És una evolució important respecte a les versions anteriors d'HTML, <b>introduint noves etiquetes i funcionalitats que permeten una millor gestió</b> del contingut multimèdia, formularis avançats, i millores en la semàntica de la pàgina web.
+        </p>
+        <h3 id="etiqueteshtml5">Etiquetes en HTML5</h3>
+        <p>
+            <strong>&lt;section&gt;</strong>: Ús per a agrupar contingut relacionat dins d'una pàgina.
+            <strong>&lt;article&gt;</strong><br>: Representa un bloc de contingut autònom, com un article d'un blog, una notícia o un post que pot existir independentment del lloc web.
+            <strong>&lt;aside&gt;</strong><br>: Defineix contingut relacionat amb el contingut principal però no essencial. Normalment s'utilitza per a barres laterals, anuncis, o informació complementària.
+            <strong>&lt;header&gt;</strong><br> i &lt;footer&gt;: Etiquetes per a definir les capçaleres i peus de pàgina.
+            <strong>&lt;nav&gt;</strong><br>: Específica per a les barres de navegació del lloc web.
+            <strong>&lt;figure&gt;</strong><br> i &lt;figcaption&gt;: Agrupa elements multimèdia (com imatges o vídeos) i les seves descripcions.
+            <br><img src="imphtml5.PNG">
     </p>
     <a href="#index3">Torna al INDEX</a>
 
+    <hr>
     <h2 id="estructura2">Estructura básica d'un document HTML</h2>
     <a href="#index3">Torna al INDEX</a>
 
+    <hr>
     <h2 id="formularihtml">Formularis amb HTML</h2>
     <p>
         <b>Els formularis</b> són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un servidor. Amb <strong>HTML5</strong>, els formularis han guanyat noves funcionalitats que milloren la seva <b>usabilitat i validació.</b>
@@ -140,6 +149,22 @@
             S'utilitza per crear <b>botons d'enviament</b> o d'altres accions dins del formulari.
             <br><button type="submit">Enviar</button>
         </p>
+        <h3 id="buttonimg">Botó amb imatge</h3>
+            <p>
+                També es pot afegir un botó que sigui una imatge
+                <br>Per exemple:
+                <button class="btn">
+                    <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/edit-redo-icon.png" width="50px">
+                </button>
+            </p>
+        <h3 id="backbutton">Botó de tornar enrere</h3>
+            <p>
+                Amb la funció onclick="history.back();" podem aconseguir afegir la funció de tornar enrede a la pagina anterior en la hi estavem.
+                <br>Per exemple <span style="color: red;">Alerta, aquest botó es funcional, aniràs a la pagina anterior.</span>
+                <button onclick="history.back();">VOLVER ATRAS
+                    <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/edit-redo-icon.png" width="15px">
+                </button> 
+            </p>
         <h3 id="radiobuttons">Radio Buttons</h3>
         <p>
             <strong>Radio buttons</strong> permeten seleccionar una opció d'un conjunt de possibilitats.
@@ -154,6 +179,7 @@
         </p>
     <a href="#index3">Torna al INDEX</a>
 
+    <hr>
     <h2 id="valformularis">Validacio de formularis</h2>
         <p>
             HTML5 introdueix una sèrie de nous atributs i tipus d'entrada per validar els formularis de manera nativa, sense la necessitat de JavaScript.
@@ -164,6 +190,7 @@
         </p>
     <a href="#index3">Torna al INDEX</a>
 
+    <hr>
     <h2 id="entradesespecials">Tipus d'entrades especials</h2>
         <p>
             Aquests tipus permeten validar i mostrar els camps de formulari de manera més adequada segons el tipus de dades que esperes obtenir de l'usuari:
@@ -184,6 +211,8 @@
             </strong>
         </p>
     <a href="#index3">Torna al INDEX</a>
+
+    <hr>
     <h2 id="multimediahtml">Multimedia amb HTML</h2>
         <p>
             HTML5 ha introduït maneres noves i eficients d'integrar multimèdia a les pàgines web, incloent imatges, vídeos, i àudio sense necessitat de plug-ins externs com Flash. Això ha millorat tant la compatibilitat com la usabilitat en múltiples dispositius, especialment en mòbils.
@@ -208,6 +237,7 @@
             <br><strong>muted:</strong> Reprodueix el vídeo sense so.
             <br><video src="https://www.youtube.com/shorts/qqDsX2oHHIw" controls width="400" height="300">
                 El teu navegador no suporta el vídeo.
+                <!-- Aqui he intentat introduir un video pero no funciona-->
                 </video>
         </p>
         <h3 id="audiohtml">Audio</h3>
@@ -220,6 +250,7 @@
             <br><strong>autoplay:</strong> Reprodueix automàticament l'àudio en carregar la pàgina.
             <br><strong>loop:</strong> Fa que l'àudio es reprodueixi en bucle.
             <br><strong>muted:</strong> Reprodueix l'àudio sense so inicialment.
+            <!-- ANo tenc fitxers d'audio per introduir-->
         </p>
         <h3 id="impinfo">Informació important</h3>
         <p>
@@ -229,6 +260,8 @@
             <br><b>Controla la mida</b> dels fitxers multimèdia per evitar temps de càrrega llargs i millorar l'experiència de l'usuari.
         </p>
     <a href="#index3">Torna al INDEX</a>
+
+    <hr>
     <h2 id="etiqueta">Etiqueta</h2>
         <h3 id="center">Etiqueta &lt;center&gt;</h3>
         <p>
@@ -270,6 +303,7 @@
         </p>
     <a href="#index3">Torna al INDEX</a>
 
+    <hr>
     <h2 id="metadades">Metadades</h2>
     <p>
         <b>Les metadades són informació que es col·loca dins del document HTML per descriure característiques del document</b> com l'autor, la descripció, les paraules clau o les instruccions per a motors de cerca i navegadors.
@@ -297,5 +331,6 @@
         <br><img src="metadadesimp.PNG">
     </p>
     <a href="#index3">Torna al INDEX</a>
+</div>
 </body>
 </html>
