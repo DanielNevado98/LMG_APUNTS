@@ -69,6 +69,7 @@
         <strong>&lt;header&gt;</strong><br> i &lt;footer&gt;: Etiquetes per a definir les capçaleres i peus de pàgina.
         <strong>&lt;nav&gt;</strong><br>: Específica per a les barres de navegació del lloc web.
         <strong>&lt;figure&gt;</strong><br> i &lt;figcaption&gt;: Agrupa elements multimèdia (com imatges o vídeos) i les seves descripcions.
+        <br><img src="imphtml5.PNG">
     </p>
     <a href="#index3">Torna al INDEX</a>
 
@@ -82,37 +83,74 @@
         <h3 id="form">Etiqueta &lt;form&gt;</h3>
         <p>
             Un formulari es crea amb <strong>l'etiqueta &lt;form&gt;</strong>, que actua com el contenidor de tots els elements d'entrada (text, botons,seleccions, etc.).
+            <form action="submit.php" method="post"></form>
+            <input type="Probaformulari" name="A" id="Text de proba">
         </p>
         <h3 id="input">Etiqueta &lt;input&gt;</h3>
         <p>
             <strong>L'etiqueta &lt;imput&gt;</strong> és l'element més versàtil per crear camps d'entrada. El tipus de camp es defineix amb l'atribut type.
+            <form action="submit.php" method="post">
+            <input type="Probaformulari" name="A" id="Text de proba">
+            <input type="Probaformulari" name="B" id="Text de proba2">
+        </form>
         </p>
         <h3 id="label">Etiqueta &lt;label&gt;</h3>
+                </form>
         <p>
             <strong>L'etiqueta &lt;label&gt;</strong> s'utilitza per a etiquetar camps de formulari i millorar l'accessibilitat.
+            <form action="submit.php" method="post">
+                <label for="Proba">Prueba1</label>
+                <input type="Probaformulari" name="A" id="Text de proba">
+                <label for="Proba">Prueba2</label>
+                <input type="Probaformulari" name="B" id="Text de proba2">
+            </form>
         </p>
         <h3 id="textarea">Etiqueta &lt;textarea&gt;</h3>
         <p>
             Per a textos llargs, com comentaris o descripcions, s'utilitza <strong>&lt;textarea&gt;</strong>, que permet una àrea de text més gran.
+            <form action="submit.php" method="post">
+                <textarea name="Prueba1" rows="5" cols="20" placeholder="Proba de formulari gran"></textarea>
+            </form>
         </p>
         <h3 id="multiple">Etiqueta &lt;select&gt; i &lt;option&gt;</h3>
         <p>
             <strong>&lt;select&gt;</strong> es fa servir per crear llistes desplegables de selecció. Cada opció dins de la llista es defineix amb <strong>&lt;option&gt;.</strong>
+            <form action="submit.php" method="post">
+                <label for="proba">Selecciona la teva proba:</label>
+                    <select id="proba" name="proba">
+                        <option value="barcelona">Proba1</option>
+                        <option value="madrid">Proba2</option>
+                        <option value="valencia">Proba3</option>
+                    </select>
+            </form>
         <h3 id="multiple">atribut "multiple"</h3>
         <p>
             Atribut <strong>multiple</strong> per les llistes desplegables de selecció. Permet seleccionar múltiples opcions en una llista de selecció.
+            <form action="submit.php" method="post">
+                <label for="proba">Selecciona la teva proba:</label>
+                    <select id="proba" name="proba" multiple>
+                        <option value="barcelona">Proba1</option>
+                        <option value="madrid">Proba2</option>
+                        <option value="valencia">Proba3</option>
+                    </select>
+            </form>
         </p>
         <h3 id="button">Etiqueta &lt;button&gt;</h3>
         <p>
             S'utilitza per crear <b>botons d'enviament</b> o d'altres accions dins del formulari.
+            <br><button type="submit">Enviar</button>
         </p>
         <h3 id="radiobuttons">Radio Buttons</h3>
         <p>
             <strong>Radio buttons</strong> permeten seleccionar una opció d'un conjunt de possibilitats.
+            <label><input type="radio" name="proba" value="proba1"> Proba1</label>
+            <label><input type="radio" name="proba" value="proba2"> Proba2</label>
         </p>
         <h3 id="checkboxes">Checkboxes</h3>
         <p>
             <strong>Els checkboxes</strong> permeten seleccionar diverses opcions independents.
+            <br><label><input type="checkbox" name="proba" value="proba"> Proba1</label>
+            <label><input type="checkbox" name="proba" value="proba"> Proba2</label>
         </p>
     <a href="#index3">Torna al INDEX</a>
 
@@ -120,7 +158,9 @@
         <p>
             HTML5 introdueix una sèrie de nous atributs i tipus d'entrada per validar els formularis de manera nativa, sense la necessitat de JavaScript.
             <br><b>Atribut required:</b> Marca un camp com a obligatori.
+            <br><input type="text" name="proba" required placeholder="proba obligatoria">
             <br><b>Atribut pattern:</b> Permet definir un patró amb expressions regulars per validar l'entrada de l'usuari.
+            <br><input type="text" name="proba" pattern="\d{9}" placeholder="proba nomes numeros">
         </p>
     <a href="#index3">Torna al INDEX</a>
 
@@ -155,6 +195,7 @@
             <br><strong>src:</strong> Especifica la ruta de la imatge.
             <br><strong>alt:</strong> Proporciona un text alternatiu per a la imatge, útil per a l'accessibilitat i SEO.
             <br><strong>width i height:</strong> Controlen la mida de la imatge.
+            <br><img src="prueba img.png" width="150" height="150">
         </p>
         <h3 id="videoshtml">Videos</h3>
         <p>
@@ -165,7 +206,9 @@
             <br><strong>autoplay:</strong> Fa que el vídeo es reprodueixi automàticament quan es carrega la pàgina.
             <br><strong>loop:</strong> Fa que el vídeo es reprodueixi en bucle.
             <br><strong>muted:</strong> Reprodueix el vídeo sense so.
-
+            <br><video src="https://www.youtube.com/shorts/qqDsX2oHHIw" controls width="400" height="300">
+                El teu navegador no suporta el vídeo.
+                </video>
         </p>
         <h3 id="audiohtml">Audio</h3>
         <p>
@@ -191,6 +234,7 @@
         <p>
             L'etiqueta &lt;center&gt; s'utilitzava en versions antigues d'HTML per centrar el contingut dins d'una pàgina web, tant text
                 com imatges o altres elements.
+                <center>Proba de center</center>
             <br><b>Està obsoleta en HTML5,</b> i s'hauria d'evitar el seu ús. En lloc de &lt;center&gt;, avui dia es fa servir <strong>CSS</strong> per centrar els elements de manera més eficient.
         </p>
         <h3 id="div">Etiqueta &lt;div&gt;</h3>
@@ -198,15 +242,19 @@
                 L'etiqueta <strong>&lt;div&gt;</strong> (abreviatura de "division") s'utilitza per crear <b>contenidors de bloc en una pàgina HTML</b>. És una etiqueta de nivell de bloc, la qual cosa significa que ocupa tot l'ample disponible i comença en una línia nova.
                 <br>No té significat semàntic en si mateixa; simplement agrupa altres elements, com text, imatges o altres etiquetes, i sol ser estilitzada amb CSS.
                 <br>És útil per organitzar i dissenyar diferents seccions d'una pàgina web.
+                <div>Proba1</div>
             </p>
         <h3 id="span">Etiqueta &lt;span&gt;</h3>
         <p>
             L'etiqueta <strong>lt;span&gt;</strong>& és una etiqueta inline (en línia) que serveix per <b>estilitzar o manipular</b>> petites porcions de text o contingut dins d'una pàgina. A diferència de &lt;div&gt;, no ocupa tot l'ample disponible, sinó que ocupa només l'espai necessari.
             <br>També és una etiqueta no semàntica, usada principalment per aplicar estils o funcionalitat a un grup específic d'elements dins d'un text.
+            <p>Aquest és un
+                <span style="color: red;">text en vermell de proba</span>.
+            </p>
         </p>
         <h3 id="hr">Etiqueta &lt;hr&gt;</h3>
         <p>
-            En HTML5, l'ús de <strong>&lt;hr&gt;</strong>l'etiqueta  no és només decoratiu. Té un valor semàntic per indicar un canvi de tema o unaruptura en el flux del document, ajudant tant als motors de cerca com a les eines d'accessibilitat a entendre millor l'estructura del contingut.
+            En HTML5, l'ús de <strong>&lt;hr&gt;</strong>l'etiqueta  no és només decoratiu. Té un valor semàntic per indicar un canvi de tema o una ruptura en el flux del document, ajudant tant als motors de cerca com a les eines d'accessibilitat a entendre millor l'estructura del contingut.
         </p>
         <h3 id="template">Etiqueta &lt;template&gt;</h3>
         <p>
@@ -218,6 +266,7 @@
             <strong>&lt;iframe&gt;</strong> (inline frame) és una etiqueta HTML que permet inserir una pàgina HTML dins d'una altra pàgina web. És una manera més moderna i segura d'incrustar contingut extern, com altres pàgines web, vídeos, formularis o mapes, dins d'una pàgina principal.
             <br>Els iframes s'utilitzen sovint per a continguts dinàmics com vídeos de YouTube, Google Maps, o integracions de serveis externs.
             <br>L'etiqueta &lt;iframe&gt; es defineix dins del cos del document i es pot personalitzar amb atributs com <b>width, height, src, i frameborder.</b>
+            <br><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ARi_JSTszok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </p>
     <a href="#index3">Torna al INDEX</a>
 
@@ -245,7 +294,7 @@
         <br>Tot i que no és un &lt;meta&gt;, el favicon és una metadada visual important que es mostra a la pestanya del navegador.
         <br><strong>lang (atribut)</strong>
         <br>L'atribut lang es defineix dins de l'etiqueta &lt;html&gt; per especificar l'idioma general de la pàgina, o dins de qualsevol altra etiqueta HTML per marcar un idioma específic dins d'una part del contingut.
-
+        <br><img src="metadadesimp.PNG">
     </p>
     <a href="#index3">Torna al INDEX</a>
 </body>
