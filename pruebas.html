@@ -1,0 +1,37 @@
+.<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid Bàsic</title>
+<style>
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; /* 3 columnes iguals */
+grid-gap: 10px; /* Espai entre les columnes */
+height: 400px;
+}
+.element {
+background-color: lightblue;
+padding: 20px;
+text-align: center;
+}
+.element-gran {
+grid-column: span 2; /* Aquest element ocuparà dues columnes */
+}
+.imglogoportada{
+        height: 57px;
+        width: 60px;
+      
+}
+</style>
+</head>
+<body>
+<div class="grid">
+<div class="element"> <img class="imglogoportada" src="fotos/paucases.png" alt=""> </div>
+<div class="element element-gran">CIFP PAU CASES NOVES</div>
+<div class="element">Element 3</div>
+<div class="element">Element 4</div>
+</div>
+</body>
+</html>

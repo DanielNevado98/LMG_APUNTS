@@ -1,0 +1,22 @@
+
+
+.imglogoportada{
+        height: 57px;
+        width: 60px;
+      
+}
+.container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: azure;
+    gap: 20px;
+    
+}
+
+.logoynombrecentro {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    font-size: 25px;
+
+}
