@@ -14,6 +14,7 @@
         <meta property="og:url" content=""> 
         <link rel="android-touch-icon" href="lapiz.webp">
         <link rel="icon" href="lapiz.webp" type="image/x-ic">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
         <center>
@@ -64,32 +65,38 @@
     </div>
     <div>
         <!-- A partir d'aqui comença tota la teoria donada en els temes-->
-         <hr>
+        <hr>
+        
         <h2 id="dades">Que son les dades?</h2>
-                <p>
-                    Les dades <strong>són representacions d'aspectes del món real</strong> que es recullen per fer càlculs, mostrar-les, organitzar-les, etc. L'objectiu és que posteriorment algú pugui fer alguna cosa amb elles, com prende decisions o generar noves dades
-                </p>
+        <div class="contenidor">
+            <div class="contingut">
+                <p>Les dades <strong>són representacions d'aspectes del món real</strong> que es recullen per fer càlculs, mostrar-les, organitzar-les, etc. L'objectiu és que posteriorment algú pugui fer alguna cosa amb elles, com prende decisions o generar noves dades</p>
+            </div>
+            <div class="contingut">
             <h3>Exemple</h3>
-                <p>
-                    Una base de dades pot contenir dades sobre un vehicle, com ara la marca, el model, l'any de fabricació, el consum de combustible, el quilometratge i l'historial de manteniments. Aquestes dades poden ser analitzades per optimitzar els serveis d'una empresa de lloguer de vehicles
-                </p>
+                <p>Una base de dades pot contenir dades sobre un vehicle, com ara la marca, el model, l'any de fabricació, el consum de combustible, el quilometratge i l'historial de manteniments. Aquestes dades poden ser analitzades per optimitzar els serveis d'una empresa de lloguer de vehicles</p>
                 <img src="/fotos/dades.jpg" alt="Imatge de analisi de dades" width="250" height="250">
-                <br>
+                
+            </div>
+        </div>
             <a href="#index1">Torna al INDEX</a>
 
             <h3 id="caracteristiquesdades">Caracteristiques de les dades</h3>
             <h3 id="dirigides">A qui van diriges</h3>
-                <p>
-                    Les dades poden anar dirigides en dos sentits:
-                <br><b>Humans:</b> Quan les dades estan destinades a éssers humans, sovint necessiten una estructura específica i comprensible. Això inclou formats llegibles com taules, gràfics o informes, que ajuden a organitzar i interpretar la informació fàcilment
-                <br><img src="/fotos/humanos.png" alt="Imatge de humans" width="250" height="250">
-                <br><b>Programes o màquines</b>: En canvi, quan les dades estan destinades a ser processades per programes informàtics, cal que estiguin estrucutrades de manera que siguin fàcilment processables i identificables. Això incliu l'ús de formats estàndard com el JSON, XML o CSV, que permeten que els sistemes automàticament entenguin i processin aquestes dades sense la intervenció humana directa. 
-                <br><img src="/fotos/maquinas.png" alt="Imatge de maquines" width="250" height="250">
-                </p>
+            <div class="contenidor">
+                <div class="contingut">
+                <p><b>Humans:</b> Quan les dades estan destinades a éssers humans, sovint necessiten una estructura específica i comprensible. Això inclou formats llegibles com taules, gràfics o informes, que ajuden a organitzar i interpretar la informació fàcilment</p>
+                <img src="/fotos/humanos.png" alt="Imatge de humans" width="250" height="250">
+                </div>
+                <div class="contingut">
+                <p><b>Programes o màquines</b>: En canvi, quan les dades estan destinades a ser processades per programes informàtics, cal que estiguin estrucutrades de manera que siguin fàcilment processables i identificables. Això incliu l'ús de formats estàndard com el JSON, XML o CSV, que permeten que els sistemes automàticament entenguin i processin aquestes dades sense la intervenció humana directa. </p>
+                <img src="/fotos/maquinas.png" alt="Imatge de maquines" width="250" height="250">
+                </div>
+            </div>
+            <div class="contenidor"></div>
             <h3 id="reutilitzacio">Reutilització de les dades</h3>
-                <p>
-                    Les dades, una vegada recollides, poden ser reutilitzades en múltiples contextos. Perquè això sigui possible, és essencial que les dades s'emmagatzemin de manera ordenada, estructurada i amb metadades que en faciliti la comprensió i la reutilització futura. Una base de dades ben estructurada, amb etiquetes clares i un bon sistema de catalogació, facilitat aquesta reutilització.
-                </p>
+                <p>Les dades, una vegada recollides, poden ser reutilitzades en múltiples contextos. Perquè això sigui possible, és essencial que les dades s'emmagatzemin de manera ordenada, estructurada i amb metadades que en faciliti la comprensió i la reutilització futura. Una base de dades ben estructurada, amb etiquetes clares i un bon sistema de catalogació, facilitat aquesta reutilització.</p>
+            </div>    
             <h3 id="comparticio">Compartició de les dades</h3>
                 <p>
                     Amb l'evolució de la tecnologia i la globalització, la compartició de dades s'ha tornat més rellevant. Ara és molt comú que les dades que es generen en una part del món es puguin fer servir en un altre lloc gairebé en temps real, gràcies a internet. Aquest fet requereix sistemes d'emmagatzematge i transmissió eficients i segurs. A més, es important, utilitzar estàndars oberts o formats compatibles que permetin aquesta transferència sense pèrdua de dades o errors de comprensió.

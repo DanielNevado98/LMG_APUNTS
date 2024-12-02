@@ -17,3 +17,28 @@ h1{
     background-color: rgb(252, 252, 252);
     
 }
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenidor {
+    display: flex;
+
+}
+
+.contingut {
+    margin: 2%;
+    text-align: justify;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(237, 241, 241);
+    width: 50%;
+
+}
+.contingut p,.contingut h3{
+    margin: 5%;
+}
+
+.contingut img {
+    align-content: center;
+}
