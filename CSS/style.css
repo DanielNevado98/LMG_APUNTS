@@ -33,12 +33,33 @@ body {
     border-radius: 50px;
     background-color: rgb(237, 241, 241);
     width: 50%;
+    display: flex;
+    flex-direction: column;
 
-}
-.contingut p,.contingut h3{
+}   
+.contingut p,.contingut h3, .contingut h4{
     margin: 5%;
 }
 
 .contingut img {
     align-content: center;
+    margin: auto;
+}
+.contingutdefinicio{
+    margin: 2%;
+    text-align: justify;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(237, 241, 241);
+    width: auto;
+    
+}
+
+.contingutdefinicio h3, .contingutdefinicio p, .contingutdefinicio h2{
+    margin-left: 2%;
+    
+}
+.imgsola {
+    align-content: right;
+    margin: auto;
 }

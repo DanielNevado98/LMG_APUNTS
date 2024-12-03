@@ -1,22 +1,72 @@
-
-
-.imglogoportada{
-        height: 57px;
-        width: 60px;
-      
+body {
+    margin: 0%;
 }
-.container {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    background-color: azure;
-    gap: 20px;
+.cabecera {
+    width: 100%;
+    background-color: rgba(119, 65, 2, 0.308);
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera > .contenido {
+    padding: 1%;
+}
+.temas {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+}
+.temas .contenido {
+    background-color: blue;
+    width: 50%;
+    margin: 1%;
+    
+}
+.temas .contenido h2 {
+    text-align: center;
+    margin: 0%;
+    background-color: aqua;
+    width: 100%;
+}
+.titulos {
+    display: flex;
     
 }
 
-.logoynombrecentro {
+.titulohtml {
+    margin: 2%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(237, 241, 241);
+    width: 33%;
+    height: 200px;
     display: flex;
-    flex-direction: row;
-    margin: 50px;
-    font-size: 25px;
+    flex-direction: column;
+    font-size:xx-large
+}
 
+.titulocss {
+    margin: 2%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(124, 224, 162);
+    width: 33%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size:xx-large
+}
+
+.titulojavascript{
+    margin: 2%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(149, 229, 229);
+    width: 33%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size:xx-large
 }
