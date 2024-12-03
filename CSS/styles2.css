@@ -12,20 +12,27 @@ body {
 }
 .temas {
     display: flex;
-    width: 100%;
-    border-radius: 50px;
+   
+    
+    
 }
 .temas .contenido {
-    background-color: blue;
-    width: 50%;
-    margin: 1%;
+    background-color: rgba(7, 175, 175, 0.137);
+    width: 33%;
+    margin: 2%;
+    border-radius: 50px;
+    height: auto;
+    border-style: solid;
     
 }
 .temas .contenido h2 {
     text-align: center;
-    margin: 0%;
-    background-color: aqua;
+    background-color: rgb(237, 241, 241);
     width: 100%;
+    border-radius: 50px;
+    border-style: solid;
+    height: 100px;
+
 }
 .titulos {
     display: flex;
@@ -50,7 +57,7 @@ body {
     text-align: center;
     border-style: solid;
     border-radius: 50px;
-    background-color: rgb(124, 224, 162);
+    background-color: rgb(176, 218, 192);
     width: 33%;
     height: 200px;
     display: flex;

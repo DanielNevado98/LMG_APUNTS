@@ -14,6 +14,7 @@
     <meta property="og:url" content=""> 
     <link rel="android-touch-icon" href="lapiz.webp">
     <link rel="icon" href="lapiz.webp" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Daniel Nevado García</title>
 </head>
 <body>
@@ -59,23 +60,23 @@
 <div>
     <hr>
     <h2 id="intro">Introducció a L'HTML</h2>
-        <p>
-            <strong>HTML (HyperText Markup Language)</strong> és el llenguatge de marques per crear pàgines web.
+    <div class="contingutdefinicio">
+        <p><strong>HTML (HyperText Markup Language)</strong> és el llenguatge de marques per crear pàgines web.
             <br>Defineix l'estructura de la pàgina amb <b>etiquetes</b> que el navegador interpreta per mostrar contingut. </p>
+    </div>
     <a href="#index2">Torna al INDEX</a>
-
+    <hr>
     <h2 id="estructura">Estructura básica d'un document HTML</h2>
-        <p>
-            Un document <strong>HTML</strong> es basa en una estructura jeràrquica de <b>etiquetes</b> que defineixen les diferents parts d'una pàgina.</p>
-        <p>
-            Cada pàgina HTML segueix una estructura similar, començant pel <strong>&lt;!DOCTYPE&gt;, seguit de les etiquetes &lt;html&gt;, &lt;head&gt;, &lt;body&gt;</strong>.
-            <br><img src="/fotos/estructurabasicahtml.PNG"><br>
-        </p>
+        <div class="contingutdefinicio">
+        <p>Un document <strong>HTML</strong> es basa en una estructura jeràrquica de <b>etiquetes</b> que defineixen les diferents parts d'una pàgina.</p>
+        <p>Cada pàgina HTML segueix una estructura similar, començant pel <strong>&lt;!DOCTYPE&gt;, seguit de les etiquetes &lt;html&gt;, &lt;head&gt;, &lt;body&gt;</strong>.
+            <br><img src="/fotos/estructurabasicahtml.PNG"><br></p>
+        </div>
     <a href="#index2">Torna al INDEX</a>
-    <hr> 
+    <hr>
     <h2 id="etiquetesbasiques">Etiquetes bàsiques</h2>
-        <p>
-            <strong>&lt;title&gt;</strong>
+    <div class="contingutdefinicio">
+            <p><strong>&lt;title&gt;</strong>
             <br>Defineix el <b>títol</b> que apareix a la pestanya del navegador o als resultats dels cercadors.
             <br><strong>&lt;h1&gt; a &lt;h6&gt;</strong>
             <br>Utilitzats per definir títols i subtítols a la pàgina web.
@@ -85,10 +86,13 @@
             <br>Inserta un espai en blanc que no es trenca entre línies. 
             <br><img src="/fotos/etiqueteshtml.PNG"><br>
             </p>
+    </div> 
     <a href="#index2">Torna al INDEX</a>
     <hr>
     <h2 id="elementsanidament">Elements HTML i Anidament</h2>
-        <h3 id="diferencies">Diferencia entre Etiquetes i elements</h3>
+    <div class="contenidor">
+        <div class="contingut">
+        <h4 id="diferencies">Diferencia entre Etiquetes i elements</h4>
             <p>
                 <strong>Etiqueta (Tag):</strong>
                 <br>És la part que defineix <b>l'inici i el final</b> d'un component en <b>HTML.</b>
@@ -97,21 +101,33 @@
                 <br>Un element inclou l'etiqueta d'<b>obertura</b>, el contingut (si n'hi ha), i l'etiqueta de <b>tancament</b>.
                 <br>Els elements poden ser buits o contenir altres elements dins.
             </p>
-        <h3 id="anidats">Elements anidats</h3>
-            <p>
-                <strong>Anidament</strong> es refereix a col·locar un element HTML dins d'un altre element.
+        </div>
+        <div class="contingut">
+        <h4 id="anidats">Elements anidats</h4>
+            <p><strong>Anidament</strong> es refereix a col·locar un element HTML dins d'un altre element.
             <br>És important seguir correctament l'ordre de les etiquetes: la primera que s'obre és l'última que es tanca.
             <br><img src="/fotos/anidament html.PNG"><br>
             </p>
+        </div>
+    </div>
         <a href="#index2">Torna al INDEX</a>
     <hr>
+
     <h2 id="atributshtml">Atributs HTML</h2>
+    <div class="contenidor">
+        <div class="contingut">
         <p>Els atributs en <strong>HTML</strong> són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen el format <b>nom="valor"</b>.
-        <br><img src="/fotos/atributshtml.PNG"><br>
-        </p>
+        </div>
+        <div class="contingut">
+            <br><img src="/fotos/atributshtml.PNG"><br></p>
+        </div>
+    </div>
         <a href="#index2">Torna al INDEX</a>
     <hr>
+
     <h2 id="textformatat">Text formatat</h2>
+    <div class="contenidor">
+        <div class="contingut">
         <p>
             <strong>&lt;b&gt; i &lt;strong&gt;</strong>: Negreta
             <br><strong>&lt;b&gt;</strong>: <b>Aplica negreta sense indicar cap importància semàntica.</b>
@@ -123,20 +139,30 @@
             <br><strong>&lt;strike&gt; o &lt;s&gt;</strong>: <strike>Aplica un ratllat al text, indicant que està esborrat o ja no és rellevant.</strike>
             <br><strong>&lt;sup&gt;</strong>: <sup>Superíndex, s'utilitza per elevar el text, com en exponents matemàtics.</sup>
             <br><strong>&lt;sub&gt;</strong>: <sub>Subíndex, s'utilitza per posar text en la posició de subíndex, sovint utilitzat en fórmules químiques.</sub>
+        </div>
+        <div class="contingut">
             <br><img src="/fotos/textformatathtml.PNG"><br>
+        </div>
         </p>
+    </div>
         <a href="#index2">Torna al INDEX</a>
     <hr>
+
     <h2 id="comenthtml">Comentaris en HTML</h2>
-        <p>
-            Els comentaris en <strong>HTML</strong> són <b>línies de text que s'afegeixen al codi per deixar notes o explicacions</b>, però que no són visibles per als usuaris finals en la pàgina web.
+            <div class="contingutdefinicio">
+        <p>Els comentaris en <strong>HTML</strong> són <b>línies de text que s'afegeixen al codi per deixar notes o explicacions</b>, però que no són visibles per als usuaris finals en la pàgina web.
             <br>S'utilitzen per <b>ajudar els desenvolupadors a documentar el codi</b>, descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.
             <br>Els comentaris <b>no afecten el rendiment ni la visualització de la pàgina en el navegador.</b>
+            </div>
+            <div class="contingutdefinicio">
             <br><img src="/fotos/comentarishtml.PNG"><br>
-            </p>
+        </div>
         <a href="#index2">Torna al INDEX</a>
     <hr>
+
     <h2 id="insertimg">Inserció d'imatges</h2>
+        <div class="contenidor">
+            <div class="contingut">
         <p>
             <strong>L'etiqueta &lt;img&gt; s'utilitza per inserir imatges en una pàgina web.</strong>
             <br><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.
@@ -160,12 +186,17 @@
                             <li>És important per controlar la mida de la imatge a la pàgina.</li>
                         </ol>
                 </ol>
+            </div>
+            <div class="contingut">
                 <br><img src="/fotos/imatgesenhtml.PNG"><br>
-            </p>
+            </div>
+            </div>
         <a href="#index2">Torna al INDEX</a>
 
     <hr>
     <h2 id="enllaços">Enllaços</h2>
+    <div class="contenidor">
+        <div class="contingut">
         <p>
             L'etiqueta <strong>&lt;a&gt;</strong> s'utilitza per crear enllaços (links) a altres pàgines web, documents, seccions dins de la mateixa pàgina o qualsevol altre recurs.
             <br>L'element essencial per als enllaços és l'atribut <strong>href que defineix l'URL a la qual redirigeix l'usuari.</strong>
@@ -187,26 +218,38 @@
                                 </ol>
                         </ol>
                 </ol>
+        </div>
+        <div class="contingut">
                 <br><img src="/fotos/enllaçoshtml.PNG"><br>
-            </p>
+        </div>
+    </div>
     <a href="#index2">Torna al INDEX</a>
-
     <hr>
+
     <h2 id="llisteshtml">Llistes</h2>
-        <h3 id="llistesnoord">LListes no ordenades &lt;ul&gt;</h3>
+    <h3>Tipus de llistes:</h3>
+    <div class="contenidor">
+        <div class="contingut">
+        <h4 id="llistesnoord">LListes no ordenades &lt;ul&gt;</h4>
             <p>
             S'utilitzen per a llistes d'elements <b>sense un ordre específic.</b>
             <br> Els elements es mostren amb vinyetes o altres símbols abans de cada ítem.
             <br>Cada element de la llista es defineix amb l'etiqueta
             &lt;li&gt; (list item).
             </p>
-        <h3 id="llistesord">Llistes ordenades</h3>
+        </div>
+        <div class="contingut">
+        <h4 id="llistesord">Llistes ordenades</h4>
         <p>
             S'utilitzen per a llistes en què <b>l'ordre dels elements és rellevant.</b>
             <br>Els elements es numeren automàticament (1, 2, 3, etc.).
             <br>Cada element de la llista també es defineix amb &lt;li&gt;
         </p>
-        <h3 id="atributsllistes">Atributs de llistes (per a llistes ordenades &lt;ol&gt;):</h3>
+    </div>
+    </div>
+        <h3 id="atributsllistes">Atributs per a llistes ordenades &lt;ol&gt;:</h3>
+        <div class="contenidor">
+            <div class="contingut">
             <h4 id="type">Atribut type</h4>
                 <p>
                     Es pot utilitzar per definir el tipus de numeració de la llista:
@@ -216,16 +259,21 @@
                     <br><b>I</b>: Números romans en majúscules.
                     <br><b>i</b>: Números romans en minúscules.
                 </p>
+            </div>
+                <div class="contingut">
             <h4 id="start">Atribut start (per a llistes ordenades &lt;ol&gt;):</h4>
                 <p>
                     Defineix el número o lletra per començar la numeració.
                 <br><img src="/fotos/llisteshtml.PNG"><br>    
                 </p>
+            </div>
+        </div>
     <a href="#index2">Torna al INDEX</a>
-
     <hr>
     <h2 id="taules">Taules</h2>
-        <h3 id="etiquetes">Etiquetes</h3>
+    <h3 id="etiquetes">Etiquetes</h3>
+    <div class="contenidor">
+        <div class="contingut">
         <p>
             <strong>Etiqueta &lt;table&gt;</strong>:
             <br>Defineix la taula i actua com el contenidor principal.
@@ -239,14 +287,22 @@
             <br>Agrupa el cos de la taula, és a dir, les files de dades. Se sol fer servir per separar les dades dels encapçalaments.
             <br><strong>Etiqueta &lt;th&gt</strong>; (table header):
             <br>S'utilitza per crear una cel·la d'encapçalament en una taula. El text dins de &lt;th&gt; apareix en negreta i centrat per defecte.
-            <br><img src="/fotos/taulahtml1.PNG"><img src="/fotos/taulahtml2.PNG">
-        </p>
+        </div>
+        <div class="contingut>"
+            <img src="/fotos/taulahtml1.PNG">
+        </div>
+        <div class="contingut">
+            <img src="/fotos/taulahtml2.PNG">
+        </div>
+    </div>
         <h3 id="atributstaula">Atributs de Taula</h3>
+    <div class="contingutdefinicio">
         <p>
             <strong>strongorder:</strong> Afegeix una vora a la taula i a les cel·les.
             <br><strong>Cellpadding:</strong> Defineix l'espai entre el contingut de la cel·la i la vora de la cel·la.
             <br><strong>Cellspacing:</strong> Controla l'espai entre les cel·les de la taula.
         </p>
+    </div>
     <a href="#index2">Torna al INDEX</a>
 </div>
 </body>

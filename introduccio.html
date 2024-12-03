@@ -1,256 +1,389 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <!-- Metadades de la pàgina-->
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Dades, HTML5">
-        <meta name="author" content="Daniel Nevado">
-        <meta name="description" content="Aquí trobaràs els apunts del temari d'introducció a Llenguatges">
-        <meta name="robots" content="index, follow">
-        <meta property="og:title" content="APUNTS LLENGUATGES"> 
-        <meta property="og:description" content="Apunts introducció">
-        <meta property="og:image" content="">
-        <meta property="og:url" content=""> 
-        <link rel="android-touch-icon" href="lapiz.webp">
-        <link rel="icon" href="lapiz.webp" type="image/x-ic">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-        <center>
-            <h1>Introducció - Analisi i interpretació de fragments de codi</h1>
-        </center>
-         <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
-        <a href="index.html"><h5>TORNA AL INDEX PRINCIPAL</h5></a>
-        <!-- index de la pàgina amb enllaços a cada tema particularment-->
-        <div>
+
+<head>
+    <!-- Metadades de la pàgina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dades, HTML5">
+    <meta name="author" content="Daniel Nevado">
+    <meta name="description" content="Aquí trobaràs els apunts del temari d'introducció a Llenguatges">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="APUNTS LLENGUATGES">
+    <meta property="og:description" content="Apunts introducció">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link rel="android-touch-icon" href="lapiz.webp">
+    <link rel="icon" href="lapiz.webp" type="image/x-ic">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Introducció - Analisi i interpretació de fragments de codi</h1>
+    </center>
+    <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
+    <a href="index.html">
+        <h5>TORNA AL INDEX PRINCIPAL</h5>
+    </a>
+    <!-- index de la pàgina amb enllaços a cada tema particularment-->
+    <div>
         <h2 id="index1">INDEX </h2>
         <ol>
-            <a href="#dades"><li>Que són les dades?</li></a>
-                <ol type="A">
-                <a href="#caracteristiquesdades"><li>Caracteristiques de les dades</li></a>
-                <a href="#dirigides"><li>A qui van dirigides</li></a>
-                <a href="#reutilitzacio"><li>Reutilització de les dades</li></a> 
-                <a href="#comparticio"><li>Compartició de les dades</li></a>
-                </ol>
-            <a href="#emmagatzematge"><li>Emmagatzematge de les dades</li></a>
+            <a href="#dades">
+                <li>Que són les dades?</li>
+            </a>
             <ol type="A">
-                <a href="#infointro"><li>Informació introductoria</li></a>
-                <a href="#classificacio"><li>Classificació de dades</li></a>
-                    <ol type="a">
-                        <a href="#dadestext"><li>Dades de text</li></a>
-                        <a href="#dadesbinaries"><li>Dades binaries</li></a>
-                        <a href="#metadades"><li>Metadades</li></a>
-                </ol>
-                <a href="#formats"><li>Formats de fitxer</li></a>
-                    <ol type="a">
-                        <a href="#csv"><li>CSV</li></a>
-                        <a href="#fitxermarques"><li>Fitxers de Marques</li></a>
-                    </ol>
+                <a href="#caracteristiquesdades">
+                    <li>Caracteristiques de les dades</li>
+                </a>
+                <a href="#dirigides">
+                    <li>A qui van dirigides</li>
+                </a>
+                <a href="#reutilitzacio">
+                    <li>Reutilització de les dades</li>
+                </a>
+                <a href="#comparticio">
+                    <li>Compartició de les dades</li>
+                </a>
             </ol>
-            <a href="#llenguatgemarques"><li>Llenguatges de Marques</li></a>
-                <ol type="A">
-                    <a href="#introllenguatges"><li>Introducció als Llenguates de Marques</li></a>
-                    <a href="#classificaciollenguatges"><li>Classificació de Llenguatges de Marques</li></a>
+            <a href="#emmagatzematge">
+                <li>Emmagatzematge de les dades</li>
+            </a>
+            <ol type="A">
+                <a href="#infointro">
+                    <li>Informació introductoria</li>
+                </a>
+                <a href="#classificacio">
+                    <li>Classificació de dades</li>
+                </a>
+                <ol type="a">
+                    <a href="#dadestext">
+                        <li>Dades de text</li>
+                    </a>
+                    <a href="#dadesbinaries">
+                        <li>Dades binaries</li>
+                    </a>
+                    <a href="#metadades">
+                        <li>Metadades</li>
+                    </a>
                 </ol>
-                <a href="#estructurairegles"><li>Estructura i regles sintàctiques</li></a>
-                <ol type="A">
-                    <a href="#html"><li>HTML</li></a>
-                    <a href="#xml"><li>XML</li></a>
-                    <a href="#csv"><li>CSV</li></a>
-                    <a href="#json"><li>JSON</li></a>
+                <a href="#formats">
+                    <li>Formats de fitxer</li>
+                </a>
+                <ol type="a">
+                    <a href="#csv">
+                        <li>CSV</li>
+                    </a>
+                    <a href="#fitxermarques">
+                        <li>Fitxers de Marques</li>
+                    </a>
                 </ol>
+            </ol>
+            <a href="#llenguatgemarques">
+                <li>Llenguatges de Marques</li>
+            </a>
+            <ol type="A">
+                <a href="#introllenguatges">
+                    <li>Introducció als Llenguates de Marques</li>
+                </a>
+                <a href="#classificaciollenguatges">
+                    <li>Classificació de Llenguatges de Marques</li>
+                </a>
+            </ol>
+            <a href="#estructurairegles">
+                <li>Estructura i regles sintàctiques</li>
+            </a>
+            <ol type="A">
+                <a href="#html">
+                    <li>HTML</li>
+                </a>
+                <a href="#xml">
+                    <li>XML</li>
+                </a>
+                <a href="#csv">
+                    <li>CSV</li>
+                </a>
+                <a href="#json">
+                    <li>JSON</li>
+                </a>
+            </ol>
 
         </ol>
     </div>
     <div>
         <!-- A partir d'aqui comença tota la teoria donada en els temes-->
         <hr>
-        
+
         <h2 id="dades">Que son les dades?</h2>
         <div class="contenidor">
             <div class="contingut">
-                <p>Les dades <strong>són representacions d'aspectes del món real</strong> que es recullen per fer càlculs, mostrar-les, organitzar-les, etc. L'objectiu és que posteriorment algú pugui fer alguna cosa amb elles, com prende decisions o generar noves dades</p>
+                <p>Les dades <strong>són representacions d'aspectes del món real</strong> que es recullen per fer
+                    càlculs, mostrar-les, organitzar-les, etc. L'objectiu és que posteriorment algú pugui fer alguna
+                    cosa amb elles, com prende decisions o generar noves dades</p>
                 <img src="/fotos/mundo.png" alt="Imatge de analisi del mon" width="250" height="250">
             </div>
             <div class="contingut">
-            <h3>Exemple</h3>
-                <p>Una base de dades pot contenir dades sobre un vehicle, com ara la marca, el model, l'any de fabricació, el consum de combustible, el quilometratge i l'historial de manteniments. Aquestes dades poden ser analitzades per optimitzar els serveis d'una empresa de lloguer de vehicles</p>
+                <h4>Exemple</h4>
+                <p>Una base de dades pot contenir dades sobre un vehicle, com ara la marca, el model, l'any de
+                    fabricació, el consum de combustible, el quilometratge i l'historial de manteniments. Aquestes dades
+                    poden ser analitzades per optimitzar els serveis d'una empresa de lloguer de vehicles</p>
                 <img src="/fotos/dades.jpg" alt="Imatge de analisi de dades" width="250" height="250">
-                
             </div>
         </div>
-            <a href="#index1">Torna al INDEX</a>
+        <a href="#index1">Torna al INDEX</a>
+        <hr>
 
-            <h3 id="caracteristiquesdades">Caracteristiques de les dades</h3>
-            <h3 id="dirigides">A qui van diriges</h3>
-            <div class="contenidor">
-                <div class="contingut">
-                    <p><b>Humans:</b> Quan les dades estan destinades a éssers humans, sovint necessiten una estructura específica i comprensible. Això inclou formats llegibles com taules, gràfics o informes, que ajuden a organitzar i interpretar la informació fàcilment</p>
-                    <img src="/fotos/humanos.png" alt="Imatge de humans" width="250" height="250">
-                </div>
-                <div class="contingut">
-                    <p><b>Programes o màquines</b>: En canvi, quan les dades estan destinades a ser processades per programes informàtics, cal que estiguin estrucutrades de manera que siguin fàcilment processables i identificables. Això incliu l'ús de formats estàndard com el JSON, XML o CSV, que permeten que els sistemes automàticament entenguin i processin aquestes dades sense la intervenció humana directa. </p>
-                    <img src="/fotos/maquinas.png" alt="Imatge de maquines" width="250" height="250">
-                </div>
+        <h2 id="caracteristiquesdades">Caracteristiques de les dades</h2>
+        <h3 id="dirigides">A qui van diriges</h3>
+        <div class="contenidor">
+            <div class="contingut">
+                <p><b>Humans:</b> Quan les dades estan destinades a éssers humans, sovint necessiten una estructura
+                    específica i comprensible. Això inclou formats llegibles com taules, gràfics o informes, que ajuden
+                    a organitzar i interpretar la informació fàcilment</p>
+                <img src="/fotos/humanos.png" alt="Imatge de humans" width="250" height="250">
             </div>
-            <div class="contenidor">
-                <div class="contingut">
-                    <h3 id="reutilitzacio">Reutilització de les dades</h3>
-                        <p>Les dades, una vegada recollides, poden ser reutilitzades en múltiples contextos. Perquè això sigui possible, és essencial que les dades s'emmagatzemin de manera ordenada, estructurada i amb metadades que en faciliti la comprensió i la reutilització futura. Una base de dades ben estructurada, amb etiquetes clares i un bon sistema de catalogació, facilitat aquesta reutilització.</p>
-                </div>
-                <div class="contingut">    
-                    <h3 id="comparticio">Compartició de les dades</h3>
-                        <p>Amb l'evolució de la tecnologia i la globalització, la compartició de dades s'ha tornat més rellevant. Ara és molt comú que les dades que es generen en una part del món es puguin fer servir en un altre lloc gairebé en temps real, gràcies a internet. Aquest fet requereix sistemes d'emmagatzematge i transmissió eficients i segurs. A més, es important, utilitzar estàndars oberts o formats compatibles que permetin aquesta transferència sense pèrdua de dades o errors de comprensió.</p>
-                </div>
+            <div class="contingut">
+                <p><b>Programes o màquines</b>: En canvi, quan les dades estan destinades a ser processades per
+                    programes informàtics, cal que estiguin estrucutrades de manera que siguin fàcilment processables i
+                    identificables. Això incliu l'ús de formats estàndard com el JSON, XML o CSV, que permeten que els
+                    sistemes automàticament entenguin i processin aquestes dades sense la intervenció humana directa.
+                </p>
+                <img src="/fotos/maquinas.png" alt="Imatge de maquines" width="250" height="250">
             </div>
-                <a href="#index1">Torna al INDEX</a>
+        </div>
+        <div class="contenidor">
+            <div class="contingut">
+                <h4 id="reutilitzacio">Reutilització de les dades</h4>
+                <p>Les dades, una vegada recollides, poden ser reutilitzades en múltiples contextos. Perquè això sigui
+                    possible, és essencial que les dades s'emmagatzemin de manera ordenada, estructurada i amb metadades
+                    que en faciliti la comprensió i la reutilització futura. Una base de dades ben estructurada, amb
+                    etiquetes clares i un bon sistema de catalogació, facilitat aquesta reutilització.</p>
+            </div>
+            <div class="contingut">
+                <h4 id="comparticio">Compartició de les dades</h4>
+                <p>Amb l'evolució de la tecnologia i la globalització, la compartició de dades s'ha tornat més
+                    rellevant. Ara és molt comú que les dades que es generen en una part del món es puguin fer servir en
+                    un altre lloc gairebé en temps real, gràcies a internet. Aquest fet requereix sistemes
+                    d'emmagatzematge i transmissió eficients i segurs. A més, es important, utilitzar estàndars oberts o
+                    formats compatibles que permetin aquesta transferència sense pèrdua de dades o errors de comprensió.
+                </p>
+            </div>
+        </div>
+        <a href="#index1">Torna al INDEX</a>
 
-        <hr>       
+        <hr>
         <h2 id="emmagatzematge">Emmagatzematge de les dades</h2>
-            <div class="contenidor">
-                <div class="contingut">
-                    <h3 id="infointro">Informacio introductoria</h3>
-                    <p>L'emmagatzematge de dades és un component clau en els sistemes informàtics, ja que permet la representació, manipulació i recuperació d'informació de manera eficient.
-                    <br>Les dades en ordinadors es representen utitilitzant el <b>format binari</b>, que consisteix en una sèrie de digits binaris, coneguts com <b>bits</b>, que poden tener el <b>valor de 1 o 0</b>. Aquesta representació es la base del funcionament de qualsevol sistema informàtic, ja que els ordinadors processen la informació mitjancant operacions binàries.</p>
-                    </div>
-                <div class="contingut">
-                    <br><img src="/fotos/almacen.png" alt="Imatge almacenaje" width="250" height="250">
-                </div>
+        <div class="contenidor">
+            <div class="contingut">
+                <h4 id="infointro">Informacio introductoria</h4>
+                <p>L'emmagatzematge de dades és un component clau en els sistemes informàtics, ja que permet la
+                    representació, manipulació i recuperació d'informació de manera eficient.
+                    <br>Les dades en ordinadors es representen utitilitzant el <b>format binari</b>, que consisteix en
+                    una sèrie de digits binaris, coneguts com <b>bits</b>, que poden tener el <b>valor de 1 o 0</b>.
+                    Aquesta representació es la base del funcionament de qualsevol sistema informàtic, ja que els
+                    ordinadors processen la informació mitjancant operacions binàries.
+                </p>
             </div>
-            <h3 id="classificacio">Classificació de dades</h3>
-            <div class="contenidor">
-                <div class="contingut">
-                    <h4 id="dadestext">Dades de text</h4><br><img src="/fotos/texto.png" alt="Imatge de texte" width="100" height="100">
-                        <p><b>Són llegibles per humans i estructurades mitjancant codificacions de caràcters, com ASCII o Unicode.</b> Això significa que cada lletra, número o símbol es representa a través d'un codi específic que després es tradueix a binari. 
-                        <br>Aquest tipus de dades es troben sovint en documents, correus electrònics o pàgines web, on és essencial mantenir la <b>llegibilitat per a les persones.</b> El format text és molt flexible i fàcil d'editar, però tambien pot ser menys eficient en termes d'emmagatzematge en comparació amb altres formats més compactes.</p>
-                </div>       
-                <div class="contingut">
-                    <h4 id="dadesbinaries">Dades Binaries</h4><br><img src="/fotos/binario.png" alt="Imatge de binari" width="100" height="100">
-                        <p>Són dades que no segueixen una estructura definida que pugui ser fàcilment llegida per humans. Inclouen fitxers com imatges, videos, àudio i altres formats Multimèdia, que es codifiquen directament en <strong>bits</strong> sense que els humans puguin interpretar-los sense un programa especialitzat. 
-                        <br>A més de la informació principal, les dades binàries poden incloure <strong>metadades</strong> que són <strong>dades</strong>
-                        <br>Aquestes dades poden requerir més espai d'emmagatzematge i són manipulades por programes especialitzats que saben com interpretar els bits que les conformen.</p>
-                </div>
-                <div class="contingut">
-                    <h4 id="metadades">Metadades</h4><br><img src="/fotos/metadatos.jpg" alt="Imatge de metadades" width="100" height="100">
-                        <p>Són <b>informació addicional</b> que descriu o proporciona context sobre les dades principals. Aquestes dades sobre les dades poden incloure informació com el tipus de fitxer, la data de creació, l'autor... Les metadades són especialment útils per organitzar, buscar i interpretar  la informació emmagatzemada, ajundant a optimitzar processos com l'arxivat o la indexació de documents.
-                            <br> Un dels problemes principals de les metadades es que poden causar complicacions en la compartició de dades entre sistemes. Si el programa o sistema que intenta recuperar la informació no entén o no coneix el format de les dades, pot no ser capaç d'interpretar correctament les dades principals. Això pot provocar pèrdua d'informació o problemes de compatibilitat </p>
-                </div>
+            <div class="contingut">
+                <br><img src="/fotos/almacen.png" alt="Imatge almacenaje" width="250" height="250">
             </div>
-            <h3 id="formats">Formats de fitxer</h3>
-            <div class="contingutdefinicio">
-                
-                <p>Els formats de fitxer defineixen com es representen les dades dins d'un fitxer. Diferents formats tenen diferents estructures i usos, depenent del tipus de dades que es necessiten emmagatzemar.</p>
+        </div>
+        <h3 id="classificacio">Classificació de dades</h3>
+        <div class="contenidor">
+            <div class="contingut">
+                <h4 id="dadestext">Dades de text</h4><br><img src="/fotos/texto.png" alt="Imatge de texte" width="100"
+                    height="100">
+                <p><b>Són llegibles per humans i estructurades mitjancant codificacions de caràcters, com ASCII o
+                        Unicode.</b> Això significa que cada lletra, número o símbol es representa a través d'un codi
+                    específic que després es tradueix a binari.
+                    <br>Aquest tipus de dades es troben sovint en documents, correus electrònics o pàgines web, on és
+                    essencial mantenir la <b>llegibilitat per a les persones.</b> El format text és molt flexible i
+                    fàcil d'editar, però tambien pot ser menys eficient en termes d'emmagatzematge en comparació amb
+                    altres formats més compactes.
+                </p>
             </div>
-            <div class="contenidor">
-                <div class="contingut">
-                    <h4 id="csv">CSV</h4>
-                        <p><b>Descripció:</b> Un format de fitxer molt senzill que utilitza línies de text per representar dades, on cada camp d'informació està separat per comes.
-                        <br><b>Avantatges:</b> És fàcil de generar i llegir per la majora de programes i llenguatges de programació. No requereix eines especialitzades i és compatible amb gairebé qualsevol plataforma, la qual cosa el fa molt popular per a l'intercanvi de dades.
-                        <br><b>Inconvenients:</b> Té limitacions en la capacitat per gestionar dades complexes, A mès, no inclou metadades, per la cual cosa no permet descriure el contingut o l'estrucutura de les dades amb tant detall com altres formats més avançats.</p>
-                </div>
-                
-                <div class="contingut">
-                    <h4 id="fitxermarques">Fitxers de Marques</h4>
-                        <p><b>Descripció:</b> Aquest tipus de fitxers combina elements de fitxers de text i binaris. Estan estructurats mitjançant etiquetes o marques, que defineixen tant les dades com la seva estructura
-                        <br><b>Avantatges:</b> Permeten incorporar metadades juntament amb les dades principals, oferint una estrucutra més rica i flexible. Els fitxers de marques són autodescriptius, és a dir, contenen informació sobre el tipus i l'estructura de les dades.
-                        <br><b>Inconvenients:</b> Aquests fitxers poden ser més grans i menys eficients que altres formats més simples com el CSV, a causa de la quantitat d'informació addicional que inclouen. A més necessiten eines més avançades per processar-los</p>
-                        </div>
+            <div class="contingut">
+                <h4 id="dadesbinaries">Dades Binaries</h4><br><img src="/fotos/binario.png" alt="Imatge de binari"
+                    width="100" height="100">
+                <p>Són dades que no segueixen una estructura definida que pugui ser fàcilment llegida per humans.
+                    Inclouen fitxers com imatges, videos, àudio i altres formats Multimèdia, que es codifiquen
+                    directament en <strong>bits</strong> sense que els humans puguin interpretar-los sense un programa
+                    especialitzat.
+                    <br>A més de la informació principal, les dades binàries poden incloure <strong>metadades</strong>
+                    que són <strong>dades</strong>
+                    <br>Aquestes dades poden requerir més espai d'emmagatzematge i són manipulades por programes
+                    especialitzats que saben com interpretar els bits que les conformen.
+                </p>
             </div>
-            <a href="#index1">Torna al INDEX</a>
+            <div class="contingut">
+                <h4 id="metadades">Metadades</h4><br><img src="/fotos/metadatos.jpg" alt="Imatge de metadades"
+                    width="100" height="100">
+                <p>Són <b>informació addicional</b> que descriu o proporciona context sobre les dades principals.
+                    Aquestes dades sobre les dades poden incloure informació com el tipus de fitxer, la data de creació,
+                    l'autor... Les metadades són especialment útils per organitzar, buscar i interpretar la informació
+                    emmagatzemada, ajundant a optimitzar processos com l'arxivat o la indexació de documents.
+                    <br> Un dels problemes principals de les metadades es que poden causar complicacions en la
+                    compartició de dades entre sistemes. Si el programa o sistema que intenta recuperar la informació no
+                    entén o no coneix el format de les dades, pot no ser capaç d'interpretar correctament les dades
+                    principals. Això pot provocar pèrdua d'informació o problemes de compatibilitat
+                </p>
+            </div>
+        </div>
+        <h3 id="formats">Formats de fitxer</h3>
+        <div class="contingutdefinicio">
 
-        <hr>  
-            <div class="contingutdefinicio">        
-                <h2 id="llenguatgemarques">Llenguatges de Marques</h2>
-                    <h3 id="introllenguatges">Introducció als Llenguatges de Marques</h3>
-                        <p><strong>Els llenguatges de marques són sistemes de codificació que permeten estructurar i presentar informació de manera que sigui comprensible</strong> tant per a humans com per a màquines. Aquests llenguatges utilitzen etiquetes per identificar diferents parts del contingut, facilitant la seva <b>interpretació i manipulació.</b></p>            
-            </div>
-            <h3 id="classificaciollenguatges">Classificació dels Llenguatges de Marques</h3>
+            <p>Els formats de fitxer defineixen com es representen les dades dins d'un fitxer. Diferents formats tenen
+                diferents estructures i usos, depenent del tipus de dades que es necessiten emmagatzemar.</p>
+        </div>
         <div class="contenidor">
             <div class="contingut">
-                <p><strong>Llenguatges procedimentals i de presentació:</strong> Com HTML, defineixen com es mostraran les dades, centrant-se en la seva estructura i format visual. Hatml organitza els elemtns d'una pàgina web, mentre que CSS s'encarrega d'estilitzar aquests elements per donar-los un aspecte atractiu i coherent en els navegadors.
-                <br><b>Mes utitlizat per:</b> Creació de pàgines WEB, disseny d'interficies d'usuari i fer que el contingut sigui mes accessible.
-            </div> 
-            <div class="contingut">     
-                <p><br><strong>Llenguatges descriptius:</strong> Com XML i JSON, descriuen l'estructura de les dades sense indicar com s'han de mostrar. Són com una llista d'elements: XML detalla els components amb precisió, mentre que JSON ofereix una versió més simple i fàcil de llegir.
-                <br><b>Mes utilitzat per:</b> Configuració d'aplicacions, intercanvi de dades i creació de formats de dades personalitzats.</p>
+                <h4 id="csv">CSV</h4>
+                <p><b>Descripció:</b> Un format de fitxer molt senzill que utilitza línies de text per representar
+                    dades, on cada camp d'informació està separat per comes.
+                    <br><b>Avantatges:</b> És fàcil de generar i llegir per la majora de programes i llenguatges de
+                    programació. No requereix eines especialitzades i és compatible amb gairebé qualsevol plataforma, la
+                    qual cosa el fa molt popular per a l'intercanvi de dades.
+                    <br><b>Inconvenients:</b> Té limitacions en la capacitat per gestionar dades complexes, A mès, no
+                    inclou metadades, per la cual cosa no permet descriure el contingut o l'estrucutura de les dades amb
+                    tant detall com altres formats més avançats.
+                </p>
             </div>
-        </div> 
-                
-        <img class="imgsola" src="/fotos/CLASIFICACION.PNG" alt="Imatge de clasificacio llenguatges de marques" width="500" height="200" >  
-                <br> 
-            <a href="#index1">Torna al INDEX</a>
-        <hr>           
+
+            <div class="contingut">
+                <h4 id="fitxermarques">Fitxers de Marques</h4>
+                <p><b>Descripció:</b> Aquest tipus de fitxers combina elements de fitxers de text i binaris. Estan
+                    estructurats mitjançant etiquetes o marques, que defineixen tant les dades com la seva estructura
+                    <br><b>Avantatges:</b> Permeten incorporar metadades juntament amb les dades principals, oferint una
+                    estrucutra més rica i flexible. Els fitxers de marques són autodescriptius, és a dir, contenen
+                    informació sobre el tipus i l'estructura de les dades.
+                    <br><b>Inconvenients:</b> Aquests fitxers poden ser més grans i menys eficients que altres formats
+                    més simples com el CSV, a causa de la quantitat d'informació addicional que inclouen. A més
+                    necessiten eines més avançades per processar-los
+                </p>
+            </div>
+        </div>
+        <a href="#index1">Torna al INDEX</a>
+        <hr>
+
+        <h2 id="llenguatgemarques">Llenguatges de Marques</h2>
+        <h3 id="introllenguatges">Introducció</h3>
+        <div class="contingutdefinicio">
+
+            
+            <p><strong>Els llenguatges de marques són sistemes de codificació que permeten estructurar i presentar
+                    informació de manera que sigui comprensible</strong> tant per a humans com per a màquines. Aquests
+                llenguatges utilitzen etiquetes per identificar diferents parts del contingut, facilitant la seva
+                <b>interpretació i manipulació.</b></p>
+        </div>
+        <h3 id="classificaciollenguatges">Classificació</h3>
+        <div class="contenidor">
+            <div class="contingut">
+                <p><strong>Llenguatges procedimentals i de presentació:</strong> Com HTML, defineixen com es mostraran
+                    les dades, centrant-se en la seva estructura i format visual. Hatml organitza els elemtns d'una
+                    pàgina web, mentre que CSS s'encarrega d'estilitzar aquests elements per donar-los un aspecte
+                    atractiu i coherent en els navegadors.
+                    <br><b>Mes utitlizat per:</b> Creació de pàgines WEB, disseny d'interficies d'usuari i fer que el
+                    contingut sigui mes accessible.
+            </div>
+            <div class="contingut">
+                <p><br><strong>Llenguatges descriptius:</strong> Com XML i JSON, descriuen l'estructura de les dades
+                    sense indicar com s'han de mostrar. Són com una llista d'elements: XML detalla els components amb
+                    precisió, mentre que JSON ofereix una versió més simple i fàcil de llegir.
+                    <br><b>Mes utilitzat per:</b> Configuració d'aplicacions, intercanvi de dades i creació de formats
+                    de dades personalitzats.
+                </p>
+            </div>
+        </div>
+
+        <img class="imgsola" src="/fotos/CLASIFICACION.PNG" alt="Imatge de clasificacio llenguatges de marques"
+            width="500" height="200">
+        <br>
+        <a href="#index1">Torna al INDEX</a>
+        <hr>
+
         <h2 id="estructurairegles">Estructura i regles sintàctiques</h2>
+        <h3 id="html">HTML</h3>
         <div class="contenidor">
+
             <div class="contingut">
-                <h3 id="html">HTML</h3>
-                <img src="/fotos/html.PNG" alt="Logo html" width="100" height="100">
+
+                
                 <p><b>Regles sintactiques</b></p>
                 <p>Cada etiqueta d'obertura (&lt;h1&gt;) ha de tenir la seva corresponent etiqueta de tancament
-                <br>L'estructura ha de seguir un ordre correcte: dins del body no poden haver-hi elemtes de capçalera (&lt;head&gt;)</p>
+                    <br>L'estructura ha de seguir un ordre correcte: dins del body no poden haver-hi elemtes de
+                    capçalera (&lt;head&gt;)
+                </p>
                 <br><img src="/fotos/estructurahtml.PNG" width="300" height="150">
             </div>
             <div class="contingut">
                 <p><b>Exemple document mal format</b></p>
-                <p>Si un document HTML està mal format, pot provocar que la p'agina web es mostri incorrectament o que algunes parts no es visualitzin.</p>
+                <p>Si un document HTML està mal format, pot provocar que la p'agina web es mostri incorrectament o que
+                    algunes parts no es visualitzin.</p>
                 <br><img src="/fotos/htmlmalformat.PNG" width="300" height="150">
             </div>
             <div class="contingut">
                 <p><b>Espais de noms</b></p>
-                <p>En <strong>HTML</strong>, els espais de noms no són tan utilitzats com en XML, però en casos d'embedat de llenguatges o tecnologia externa, com <strong>SVG</strong>
-                <br>Avantatge: L'ús de l'espai de noms xmlns per a SVG permet que el navegador sàpiga que el contingut dins d'aquestes etiquetes és gràfic vectorial, no HTML.</p>
+                <p>En <strong>HTML</strong>, els espais de noms no són tan utilitzats com en XML, però en casos
+                    d'embedat de llenguatges o tecnologia externa, com <strong>SVG</strong>
+                    <br>Avantatge: L'ús de l'espai de noms xmlns per a SVG permet que el navegador sàpiga que el
+                    contingut dins d'aquestes etiquetes és gràfic vectorial, no HTML.
+                </p>
                 <br><img src="/fotos/espaidenomshtml.PNG" width="300" height="150">
             </div>
         </div>
-
+        <h3 id="xml">XML</h3>
         <div class="contenidor">
             <div class="contingut">
-                <h3 id="xml">XML</h3>
-                <img src="/fotos/xml.PNG" alt="Logo xml" width="100" height="100">
                 <p><b>Regles sintactiques</b>
-                Les etiquetes han d'estar correctament tancades
-                <br>Els elements han d'estar correctament imbricats
-                <br>XML es <strong>case-sensitive</strong>, es a dir &lt;titol&gt; i &lt;Titol&gt; son etiquetes diferents</p>
+                    Les etiquetes han d'estar correctament tancades
+                    <br>Els elements han d'estar correctament imbricats
+                    <br>XML es <strong>case-sensitive</strong>, es a dir &lt;titol&gt; i &lt;Titol&gt; son etiquetes
+                    diferents
+                </p>
                 <br><img src="/fotos/estructuraxml.PNG" width="300" height="150">
             </div>
             <div class="contingut">
                 <p><b>Exemple document mal format</b></p>
-                <p><br>Un document XML mal format pot impedir completament que sigui processat, ja que els parsers XML són molt estrictes.</p> 
+                <p><br>Un document XML mal format pot impedir completament que sigui processat, ja que els parsers XML
+                    són molt estrictes.</p>
                 <br><img src="/fotos/xmlmalformat.PNG" width="300" height="150">
             </div>
             <div class="contingut">
                 <p><b>Espais de noms</b></p>
                 <p>Els espais de noms en XML són especialment útils quan es combinen dades de diverses fonts.
-                <br>Avantatge: Diferencia elements d'una mateixa estructura que podrien tenir el mateix nom, evitant conflictes en combinar dades.</p>
+                    <br>Avantatge: Diferencia elements d'una mateixa estructura que podrien tenir el mateix nom, evitant
+                    conflictes en combinar dades.
+                </p>
                 <br><img src="/fotos/espaidenomxml.PNG" width="300" height="150">
             </div>
 
         </div>
+        <h3 id="csv">CSV</h3>
         <div class="contenidor">
             <div class="contingut">
-                <h3 id="csv">CSV</h3>
-                <img src="/fotos/csv.PNG" alt="Logo csv" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
                 <p>Cada linia representa un registre de dades.
-                <br>Els camps estan separats per comes (o un altre delimitador especial)
-                <br>Es important mantenir la mateixa estructura per a cada fila</p>
-                <br><img src="/fotos/estructuracsv.PNG"width="300" height="150">
-            </div> 
+                    <br>Els camps estan separats per comes (o un altre delimitador especial)
+                    <br>Es important mantenir la mateixa estructura per a cada fila
+                </p>
+                <br><img src="/fotos/estructuracsv.PNG" width="300" height="150">
+            </div>
             <div class="contingut">
                 <p><b>Exemple document mal format</b></p>
-                <p>Si un document CSV no segueix la mateixa estructura per a totes les línies, les dades es processaran de manera incorrecta.</p>
+                <p>Si un document CSV no segueix la mateixa estructura per a totes les línies, les dades es processaran
+                    de manera incorrecta.</p>
                 <br><img src="/fotos/csvmalformat.PNG" width="300" height="150">
             </div>
         </div>
+        <h3 id="json">JSON</h3>
         <div class="contenidor">
             <div class="contingut">
-            <h3 id="json">JSON</h3>
-            <img src="/fotos/json.PNG" alt="Logo json" width="100" height="100">
                 <p><b>Regles sintactiques</b></p>
                 <p>Les claus i les cadenes de text han d'estar entre cometes dobles(" ")
-                <br>Els elements han d'estar separats per comes.
-                <br>Els objetectes es defineixen amb claudators {} i les llistes amb claudators cuadrats []</p>
+                    <br>Els elements han d'estar separats per comes.
+                    <br>Els objetectes es defineixen amb claudators {} i les llistes amb claudators cuadrats []
+                </p>
                 <br><img src="/fotos/estructurajson.PNG" width="300" height="150">
             </div>
             <div class="contingut">
@@ -260,11 +393,15 @@
             </div>
             <div class="contingut">
                 <p><b>Espais de noms</b></p>
-                <p>El JSON tampoc utilitza espais de noms com l'XML, però els objectes poden simular-ne l'ús utilitzant claus dins d'estrcutures imbricades.
-                <br>Avantatge: En lloc de tenir conflictes de noms, els objectes permeten mantenir separats diferentes conjunts de dades en un sol document.</p>
+                <p>El JSON tampoc utilitza espais de noms com l'XML, però els objectes poden simular-ne l'ús utilitzant
+                    claus dins d'estrcutures imbricades.
+                    <br>Avantatge: En lloc de tenir conflictes de noms, els objectes permeten mantenir separats
+                    diferentes conjunts de dades en un sol document.
+                </p>
                 <br><img src="/fotos/espaidenomsjson.PNG" width="300" height="150">
             </div>
         </div>
-            <a href="#index1">Torna al INDEX</a>
-    </body>
+        <a href="#index1">Torna al INDEX</a>
+</body>
+
 </html>

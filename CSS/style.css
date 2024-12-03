@@ -21,6 +21,31 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+h2{
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 2%;
+    margin-right: 80%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    font-size:xx-large;
+    background-color: rgba(7, 175, 175, 0.137);
+    width: 33%;
+}
+
+h3{
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 2%;
+    margin-right: 80%;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size:x-large;
+    background-color: rgba(9, 129, 129, 0.137);
+}
+
 .contenidor {
     display: flex;
 
@@ -51,12 +76,15 @@ body {
     border-style: solid;
     border-radius: 50px;
     background-color: rgb(237, 241, 241);
-    width: auto;
+    width: 32%;
+    height:auto;
+   
+    
     
 }
 
 .contingutdefinicio h3, .contingutdefinicio p, .contingutdefinicio h2{
-    margin-left: 2%;
+    margin: 3%;
     
 }
 .imgsola {
