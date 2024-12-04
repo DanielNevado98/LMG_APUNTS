@@ -67,8 +67,9 @@ h3{
 }
 
 .contingut img {
-    align-content: center;
+    align-self: center;
     margin: auto;
+    flex-shrink: 1;
 }
 .contingutdefinicio{
     margin: 2%;
@@ -77,10 +78,13 @@ h3{
     border-radius: 50px;
     background-color: rgb(237, 241, 241);
     width: 32%;
-    height:auto;
-   
-    
-    
+    height:auto;   
+}
+
+.contingutdefinicio img {
+    align-self: center;
+    margin: auto;
+    flex-shrink: 1;
 }
 
 .contingutdefinicio h3, .contingutdefinicio p, .contingutdefinicio h2{
@@ -90,4 +94,19 @@ h3{
 .imgsola {
     align-content: right;
     margin: auto;
+}
+
+.botoindex {
+    border-style: solid;
+    font-size: large;
+    border-radius: 50px;
+    margin: 2%;
+    background-color:rgb(211, 208, 178);
+    border-color: rgb(94, 69, 69);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
