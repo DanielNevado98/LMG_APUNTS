@@ -1,336 +1,665 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head> 
+    <!-- Metadades de la pagina -->
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Dades, HTML5, CSS">
+    <meta name="keywords" content="Dades, HTML5">
     <meta name="author" content="Daniel Nevado">
-    <meta name="description" content="Aqui trobaràs els apunts de CSS bàsic">
-    <meta name="apunts" content="index, follow">
+    <meta name="description" content="Aqui trobaràs els apunts d'HTML basic">
+    <meta name="apunts" content ="index, follow">
     <meta property="og:title" content="APUNTS LLENGUATGES"> 
-    <meta property="og:description" content="Apunts CSS Bàsic">
+    <meta property="og:description" content="Apunts HTML basics">
     <meta property="og:image" content="">
     <meta property="og:url" content=""> 
     <link rel="android-touch-icon" href="lapiz.webp">
     <link rel="icon" href="lapiz.webp" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/stylescssbasic.css">
     <title>Daniel Nevado García</title>
 </head>
+<header>
+    <div class="cabecera">
+        <div class="contenidos">
+          <h2 class="nombrecabecera">Daniel Nevado García</h2>
+        </div>
+        <div class="contenidos">
+            <h2 class="nombrecabecera">Apunts de Llenguatge de Marques</h2>
+        </div>
+    </div>
+</header>
 <body>
-    <center>
-        <h1>Apunts CSS Bàsic</h1>
-    </center>
-    <!-- Botó per tornar a la pàgina inicial amb el index amb tots els continguts-->
-    <a href="index.html"><h5>TORNA AL INDEX PRINCIPAL</h5></a>
-    <h2 id="index4">INDEX</h2>
-    <!-- index de la pàgina amb enllaços a cada tema particularment-->
-     <div>
-    <ol>
-    <a href="#introcss"><li>HTML5 i la seva Evolució</li></a>
-    <a href="#etiqueteshtml5"><li>Etiquetes en HTML5</li></a>
-    <a href="#estructura2"><li>Estructura bàsica d'un document HTML</li></a>
-    <a href="#formularihtml"><li>Formularis amb HTML</li></a>
-        <ol type="A">
-            <a href="#form"><li>Etiqueta &lt;form&gt;</li></a>
-            <a href="#input"><li>Etiqueta &lt;input&gt;</li></a>
-            <a href="#ilabel"><li>Etiqueta &lt;label&gt;</li></a>
-            <a href="#textarea"><li>Etiqueta &lt;textarea&gt;</li></a>
-            <a href="#multiple"><li>atribut "multiple"</li></a>
-            <a href="#button"><li>Etiqueta &lt;button&gt;</li></a>
-            <a href="buttonimg"><li>Botó amb imatge (CONCEPTE NOU AFEGIT)</li></a>
-            <a href="#radiobuttons"><li>Radio Buttons</li></a>
-            <a href="#checkboxes"><li>Checkboxes</li></a>
-        </ol>
-    <a href="#valformularis"><li>Validació de formularis</li></a>
-    <a href="#entradesespecials"><li>Tipus d'entrades especials</li></a>
-    <a href="#multimediahtml"><li>Multimedia amb HTML</li></a>
-    <ol type="A">
-        <a href="#imatgeshtml"><li>Imatges</li></a>
-        <a href="#videoshtml"><li>Videos</li></a>
-        <a href="#audiohtml"><li>Audio</li></a>
-        <a href="#impinfo"><li>Informació important</li></a>
-    </ol>
-    <a href="#etiqueta"><li>Etiqueta</li></a>
-    <ol type="A">
-        <a href="#center"><li>&lt;center&gt;</li></a>
-        <a href="#div"><li>&lt;div&gt;</li></a>
-        <a href="#span"><li>&lt;span&gt;</li></a>
-        <a href="#hr"><li>&lt;hr&gt;</li></a>
-        <a href="#template"><li>&lt;template&gt;</li></a>
-        <a href="#Iframes"><li>&lt;IFrames&gt;</li></a>
-    </ol>
-    <a href="#metadades"><li>Metadades</li></a>
-    </ol>
-</div>
-<div>
-<!-- A partir d'aqui comença tota la teoria donada en els temes-->
-    <hr>
-    <h2 id="introhtml5">HTML5 i la seva Evolució</h2>
-        <p>
-            És una evolució important respecte a les versions anteriors d'HTML, <b>introduint noves etiquetes i funcionalitats que permeten una millor gestió</b> del contingut multimèdia, formularis avançats, i millores en la semàntica de la pàgina web.
-        </p>
-        <h3 id="etiqueteshtml5">Etiquetes en HTML5</h3>
-        <p>
-            <strong>&lt;section&gt;</strong>: Ús per a agrupar contingut relacionat dins d'una pàgina.
-            <strong>&lt;article&gt;</strong><br>: Representa un bloc de contingut autònom, com un article d'un blog, una notícia o un post que pot existir independentment del lloc web.
-            <strong>&lt;aside&gt;</strong><br>: Defineix contingut relacionat amb el contingut principal però no essencial. Normalment s'utilitza per a barres laterals, anuncis, o informació complementària.
-            <strong>&lt;header&gt;</strong><br> i &lt;footer&gt;: Etiquetes per a definir les capçaleres i peus de pàgina.
-            <strong>&lt;nav&gt;</strong><br>: Específica per a les barres de navegació del lloc web.
-            <strong>&lt;figure&gt;</strong><br> i &lt;figcaption&gt;: Agrupa elements multimèdia (com imatges o vídeos) i les seves descripcions.
-            <br><img src="imphtml5.PNG">
-    </p>
-    <a href="#index3">Torna al INDEX</a>
+    <div class="contenedor">
+        <div class="index">
+            <h1 id="index1">INDEX</h1>
+            <div class="contenedorindex">
+                <div class="columnaindex">
+                    <button class="btn boto1 btn-block"> <a href="#introcss"> <p class="botonindexstyle">Introducció al CSS</p></a></button>
+                    </div>
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#appestils"><p class="botonindexstyle">Aplicació d'estils</p></a></button>
+                    </div> 
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#sintaxbasica"><p class="botonindexstyle">Sintaxi bàsica del CSS</p></a></button>
+                    </div>
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#proptextifonts"><p class="botonindexstyle">Propietats de text i fonts</p></a></button>
+                </div>
+                <div class="columnaindex">
+                    <button class="btn boto1 btn-block"><a href="#margesfarcitsvores"><p class="botonindexstyle">Marges, farcits i vores</p></a></button>
+                </div>
+            </div>
+            <div class="contenedorindex">
+                <div class="columnaindex">
+                    <button class="btn boto1 btn-block"><a href="#colorsifons"></a><p class="botonindexstyle">Colors i fons</p></button>
+                    </div>
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#dimensionsicaixescss"><p class="botonindexstyle">Dimensions i caixes</p></a></button>
+                    </div> 
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#posicionamentbasiccss"><p class="botonindexstyle">Posicionament bàsic</p></a></button>
+                    </div>
+                <div class="columnaindex">
+                        <button class="btn boto1 btn-block"><a href="#flexbox"><p class="botonindexstyle">Disseny bàsic amb Flexbox</p></a></button>
+                </div>
+                <div class="columnaindex">
+                    <button class="btn boto1 btn-block"><a href="#mediaqueries"><p class="botonindexstyle">Media Queries (Introducció)</p></a></button>
+                </div>    
+            </div>
+                
+                
+            </div>
+        <div class="cuerpo">
+            <h2 class="botonvueltaindexprincipal"><a href="index.html">Torna a l'index principal</h2></a>
+            <h2 id="introcss">Introducció al CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Què es el CSS?</h3>
+                    <p>CSS (Cascading Style Sheets) és un llenguatge de fulles d’estil que s’utilitza per controlar la
+                        presentació i el disseny dels documents web escrits en HTML. Mentre que HTML proporciona
+                        l’estructura del contingut, CSS defineix com s’ha de visualitzar aquest contingut en termes de
+                        disseny, colors, tipografia, espaiat i posicionament dels elements en una pàgina.</p>
+                </div>
+                <div class="contenido">
+                    <h3>Importància del CSS en el desenvolupament web</h3>
+                    <p>El CSS és una peça fonamental del desenvolupament web, ja que permet separar la presentació visual del contingut estructural
+                        d'una pàgina. Això ofereix una sèrie d'avantatges:
+                        Disseny i estètica millorats: Amb CSS, pots aplicar estils atractius i professionals a les pàgines web, fent-les visualment
+                        atractives i més fàcils de llegir i navegar.
+                        Separació de contingut i estil: Gràcies al CSS, és possible mantenir els estils de presentació (com colors, mides de text,
+                        marges) fora del codi HTML, el que facilita el manteniment i l'actualització del disseny sense afectar l'estructura del contingut.
+                        Facilitat de manteniment: Amb un sol fitxer CSS, pots aplicar estils a múltiples pàgines web, estalviant temps i esforç quan es
+                        fan canvis de disseny. Això permet una actualització i un manteniment molt més eficient.
+                        Millor experiència d'usuari: Amb el CSS es poden crear dissenys adaptables (responsive) que funcionen bé en diferents
+                        dispositius, com mòbils, tauletes i ordinadors de sobretaula. Aquest tipus de disseny millora significativament l’experiència de
+                        l’usuari.
+                        Rendiment i velocitat: Utilitzar fitxers CSS externs pot ajudar a carregar les pàgines web més ràpidament, ja que els
+                        navegadors poden emmagatzemar en memòria cau aquests fitxers i reutilitzar-los en diverses pàgines, estalviant ample de
+                        banda i temps de càrrega.</p>
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
 
-    <hr>
-    <h2 id="estructura2">Estructura básica d'un document HTML</h2>
-    <a href="#index3">Torna al INDEX</a>
+            <h2 id="appestils">Aplicació d'estils</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Estils en línia (Inline styles) </h3>
+                    <p>Els estils en línia s'apliquen directament a un element HTML, utilitzant l'atribut style dins de la mateixa etiqueta de
+                        l'element. Aquest mètode és adequat per a aplicar estils a un sol element de manera ràpida, però no és recomanable
+                        per a pàgines grans, ja que dificulta la mantenibilitat.</p>
+                        <p>Exemple:</p>
+                        <p>&lt;p style="color: red; font-size: 20px;" &gt;</p>
+                        <p style="color: red; font-size: 20px;">Aquest és un paràgraf amb estils en línia.</p>
+                </div>
+                <div class="contenido">
+                    <h3>Estils incrustats (Embedded styles)</h3>
+                    <p>Els estils incrustats es col·loquen dins de la secció &lt;head&gt; d’un document HTML, dins d’una etiqueta &lt;style&gt;. Aquests
+                        estils s'apliquen a tots els elements HTML de la pàgina actual.</p>
+                    <p><b>Avantatges:</b>
+                        Més eficient que els estils en línia, ja que
+                        es poden aplicar estils a diversos
+                        elements d'una mateixa pàgina des d'un
+                        sol lloc.</p>
+                    <p><b>Inconvenients:</b>
+                        Només afecta la pàgina on s’aplica, no es
+                        reutilitza entre diverses pàgines.
+                        Si la pàgina creix massa, pot fer més difícil
+                        la lectura i manteniment.</p>
+                        <p>Exemple:</p>
+                        &lt;style&gt; <br>
+                            p { <br>
+                            color: blue; <br>
+                            font-size: 18px; <br>
+                            } <br>
+                            h1 { <br>
+                            text-align: center; <br>
+                            } <br>
+                            &lt;/style&gt;
+                </div>
+                <div class="contenido">
+                    <h3>Estils externs (External stylesheets)</h3>
+                    <p>Els estils externs s’emmagatzemen en un fitxer CSS separat, i s’enllacen al document HTML utilitzant l'etiqueta &lt;link&gt;
+                        dins de la secció &lt;head&gt;. Aquest és el mètode més recomanat per a la majoria de llocs webs, especialment si consten
+                        de múltiples pàgines.</p>
+                        <img src="fotos/cssejemplo.PNG" alt="Foto de ejemplo css externo">
+                        <img src="fotos/cssejemplo1.PNG" alt="Foto de ejemplo css externo">
+                    
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
 
-    <hr>
-    <h2 id="formularihtml">Formularis amb HTML</h2>
-    <p>
-        <b>Els formularis</b> són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un servidor. Amb <strong>HTML5</strong>, els formularis han guanyat noves funcionalitats que milloren la seva <b>usabilitat i validació.</b>
-    </p>
-        <h3 id="form">Etiqueta &lt;form&gt;</h3>
-        <p>
-            Un formulari es crea amb <strong>l'etiqueta &lt;form&gt;</strong>, que actua com el contenidor de tots els elements d'entrada (text, botons,seleccions, etc.).
-            <form action="submit.php" method="post"></form>
-            <input type="Probaformulari" name="A" id="Text de proba">
-        </p>
-        <h3 id="input">Etiqueta &lt;input&gt;</h3>
-        <p>
-            <strong>L'etiqueta &lt;imput&gt;</strong> és l'element més versàtil per crear camps d'entrada. El tipus de camp es defineix amb l'atribut type.
-            <form action="submit.php" method="post">
-            <input type="Probaformulari" name="A" id="Text de proba">
-            <input type="Probaformulari" name="B" id="Text de proba2">
-        </form>
-        </p>
-        <h3 id="label">Etiqueta &lt;label&gt;</h3>
-                </form>
-        <p>
-            <strong>L'etiqueta &lt;label&gt;</strong> s'utilitza per a etiquetar camps de formulari i millorar l'accessibilitat.
-            <form action="submit.php" method="post">
-                <label for="Proba">Prueba1</label>
-                <input type="Probaformulari" name="A" id="Text de proba">
-                <label for="Proba">Prueba2</label>
-                <input type="Probaformulari" name="B" id="Text de proba2">
-            </form>
-        </p>
-        <h3 id="textarea">Etiqueta &lt;textarea&gt;</h3>
-        <p>
-            Per a textos llargs, com comentaris o descripcions, s'utilitza <strong>&lt;textarea&gt;</strong>, que permet una àrea de text més gran.
-            <form action="submit.php" method="post">
-                <textarea name="Prueba1" rows="5" cols="20" placeholder="Proba de formulari gran"></textarea>
-            </form>
-        </p>
-        <h3 id="multiple">Etiqueta &lt;select&gt; i &lt;option&gt;</h3>
-        <p>
-            <strong>&lt;select&gt;</strong> es fa servir per crear llistes desplegables de selecció. Cada opció dins de la llista es defineix amb <strong>&lt;option&gt;.</strong>
-            <form action="submit.php" method="post">
-                <label for="proba">Selecciona la teva proba:</label>
-                    <select id="proba" name="proba">
-                        <option value="barcelona">Proba1</option>
-                        <option value="madrid">Proba2</option>
-                        <option value="valencia">Proba3</option>
-                    </select>
-            </form>
-        <h3 id="multiple">atribut "multiple"</h3>
-        <p>
-            Atribut <strong>multiple</strong> per les llistes desplegables de selecció. Permet seleccionar múltiples opcions en una llista de selecció.
-            <form action="submit.php" method="post">
-                <label for="proba">Selecciona la teva proba:</label>
-                    <select id="proba" name="proba" multiple>
-                        <option value="barcelona">Proba1</option>
-                        <option value="madrid">Proba2</option>
-                        <option value="valencia">Proba3</option>
-                    </select>
-            </form>
-        </p>
-        <h3 id="button">Etiqueta &lt;button&gt;</h3>
-        <p>
-            S'utilitza per crear <b>botons d'enviament</b> o d'altres accions dins del formulari.
-            <br><button type="submit">Enviar</button>
-        </p>
-        <h3 id="buttonimg">Botó amb imatge</h3>
-            <p>
-                També es pot afegir un botó que sigui una imatge
-                <br>Per exemple:
-                <button class="btn">
-                    <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/edit-redo-icon.png" width="50px">
-                </button>
-            </p>
-        <h3 id="backbutton">Botó de tornar enrere</h3>
-            <p>
-                Amb la funció onclick="history.back();" podem aconseguir afegir la funció de tornar enrede a la pagina anterior en la hi estavem.
-                <br>Per exemple <span style="color: red;">Alerta, aquest botó es funcional, aniràs a la pagina anterior.</span>
-                <button onclick="history.back();">VOLVER ATRAS
-                    <img src="https://icons.iconarchive.com/icons/gartoon-team/gartoon-action/256/edit-redo-icon.png" width="15px">
-                </button> 
-            </p>
-        <h3 id="radiobuttons">Radio Buttons</h3>
-        <p>
-            <strong>Radio buttons</strong> permeten seleccionar una opció d'un conjunt de possibilitats.
-            <label><input type="radio" name="proba" value="proba1"> Proba1</label>
-            <label><input type="radio" name="proba" value="proba2"> Proba2</label>
-        </p>
-        <h3 id="checkboxes">Checkboxes</h3>
-        <p>
-            <strong>Els checkboxes</strong> permeten seleccionar diverses opcions independents.
-            <br><label><input type="checkbox" name="proba" value="proba"> Proba1</label>
-            <label><input type="checkbox" name="proba" value="proba"> Proba2</label>
-        </p>
-    <a href="#index3">Torna al INDEX</a>
+                <h2 id="sintaxbasica">Sintaxi básica del CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <p style="color: rgb(255, 5, 213);font-size: 20px;"><b>1. Regla CSS</b> <br>
+                        Es una instrucció que defineix com
+                        s'ha d'aplicar un estil a un o més elements HTML
+                        dins d'una pàgina web.</p>
+                        <br>
+                    <p style="color: rgb(217, 255, 0);font-size: 20px;"><b>2. Selector</b>: <br>
+                        Indica l'element HTML al qual
+                        s'aplicaran els estils.</p>
+                        <br>
+                    <p style="color: rgb(4, 102, 4);font-size: 20px;"><b>3. Propietat</b>:<br>
+                        Defineix la característica que vols
+                        modificar (com ara el color, la mida del text, el
+                        marge, etc.).</p>
+                        <br>
+                    <p style="color: rgb(12, 9, 206);font-size: 20px;"><b>4. Valor</b>:<br> 
+                        Assigna un valor específic a la propietat
+                        (com ara "blau" per al color, "16px" per a la mida
+                        del text, etc.).</p>
+                        <br>
+                    <p style="color: rgb(255, 255, 255);font-size: 20px;"><b>5. Declaració CSS</b>:<br> 
+                        Es una instrucció dins d'una regla
+                        CSS que defineix una característica específica d'estil
+                        per a un element HTML.</p>
+                    
 
-    <hr>
-    <h2 id="valformularis">Validacio de formularis</h2>
-        <p>
-            HTML5 introdueix una sèrie de nous atributs i tipus d'entrada per validar els formularis de manera nativa, sense la necessitat de JavaScript.
-            <br><b>Atribut required:</b> Marca un camp com a obligatori.
-            <br><input type="text" name="proba" required placeholder="proba obligatoria">
-            <br><b>Atribut pattern:</b> Permet definir un patró amb expressions regulars per validar l'entrada de l'usuari.
-            <br><input type="text" name="proba" pattern="\d{9}" placeholder="proba nomes numeros">
-        </p>
-    <a href="#index3">Torna al INDEX</a>
+                    </div>
+                    <div class="imgcontenido">
+                        <img src="fotos/sintaxiccs.PNG" alt="foto ejemplo sintaxi css" width=100%>
+                    </div>
+                </div>
+                <a class="botoindex" href="#index1">Torna al INDEX</a>
 
-    <hr>
-    <h2 id="entradesespecials">Tipus d'entrades especials</h2>
-        <p>
-            Aquests tipus permeten validar i mostrar els camps de formulari de manera més adequada segons el tipus de dades que esperes obtenir de l'usuari:
-            <strong>
-            <br>&lt;input type="password"&gt;
-            <br>&lt;input type="email"&gt;
-            <br>&lt;input type="url"&gt;
-            <br>&lt;input type="tel"&gt;
-            <br>&lt;input type="numer"&gt;
-            <br>&lt;input type="range"&gt;
-            <br>&lt;input type="date"&gt;
-            <br>&lt;input type="time"&gt;
-            <br>&lt;input type="datetime-local"&gt;
-            <br>&lt;input type="month"&gt;
-            <br>&lt;input type="week"&gt;
-            <br>&lt;nput type="color"&gt;
-            <br>&lt;input type="file"&gt;
-            </strong>
-        </p>
-    <a href="#index3">Torna al INDEX</a>
+                <h2 id="selectorscss">Selectors en CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3><b>Selector de tipus (Type Selector)</b> <br></h3> 
+                        <p>Aquest selector aplica estils a tots els elements HTML del mateix
+                        tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1&gt;) de la
+                        pàgina.</p>
+                        <br>
+                        <p>h1 { <br>
+                            color: green;<br>
+                            }</p>
+                </div>
+                <div class="contenido">
+                    <h3><b>Selector de classe (Class Selector)</b><br></h3> 
+                        <p>Els selectors de classe permeten aplicar estils a elements HTML amb
+                        una classe específica. S’utilitza un punt (.) per seleccionar una
+                        
+                        classe. Qualsevol element HTML que tingui l'atribut class="mi-
+                        classe" tindrà un fons groc. Per exemple:</p>
+                        <br>  
+                        <p>.mi-classe {<br>
+                            background-color: yellow;<br>
+                            }</p>
+                </div>
+                <div class="contenido">
+                    <h3><b>Selector d'id (ID Selector)</b><br></h3> 
+                        <p>El selector d’id s’utilitza per aplicar estils a un únic element HTML
+                        que tingui un identificador específic. Es fa servir el símbol de la
+                        coixinera #. Aquest exemple centrarà el text de l’element que tingui
+                        id="mi-id". És important recordar que un ID ha de ser únic a la
+                        pàgina.</p>
+                        <br>
+                        <p>#mi-id { <br>
+                            text-align: center;<br>
+                            }</p>
+                </div>
+                <div class="contenido">
+                    <h3><b>Selector universal</b><br></h3> 
+                        <p>El selector universal (*) aplica estils a tots els elements d’una
+                        pàgina. Aquest exemple elimina els marges i farcits de tots els
+                        elements de la pàgina, cosa útil per establir un estil uniforme.</p>
+                        <br>
+                        &lt;p&gt;* {<br>
+                            margin: 0;<br>
+                            padding: 0;<br>
+                            }</p>
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
 
-    <hr>
-    <h2 id="multimediahtml">Multimedia amb HTML</h2>
-        <p>
-            HTML5 ha introduït maneres noves i eficients d'integrar multimèdia a les pàgines web, incloent imatges, vídeos, i àudio sense necessitat de plug-ins externs com Flash. Això ha millorat tant la compatibilitat com la usabilitat en múltiples dispositius, especialment en mòbils.
-        </p>
-        <h3 id="imatgeshtml">Imatges</h3>
-        <p>
-            <strong>L'etiqueta &lt;img&gt;</strong> s'utilitza per <b>inserir imatges en una pàgina web</b>. Aquesta etiqueta és auto-tancada (no té etiqueta de tancament).
-            <br><b>Atributs principals</b>
-            <br><strong>src:</strong> Especifica la ruta de la imatge.
-            <br><strong>alt:</strong> Proporciona un text alternatiu per a la imatge, útil per a l'accessibilitat i SEO.
-            <br><strong>width i height:</strong> Controlen la mida de la imatge.
-            <br><img src="/fotos/prueba img.png" width="150" height="150">
-        </p>
-        <h3 id="videoshtml">Videos</h3>
-        <p>
-            HTML5 introdueix l'etiqueta <strong>&lt;video&gt;</strong> per inserir vídeos de manera nativa a la pàgina web, sense necessitat de plug-ins externs.
-            <br><b>Atributs principals</b>
-            <br><strong>src:</strong> Ruta del fitxer de vídeo.
-            <br><strong>controls:</strong> Mostra els controls del vídeo (play, pause, volum, etc.).
-            <br><strong>autoplay:</strong> Fa que el vídeo es reprodueixi automàticament quan es carrega la pàgina.
-            <br><strong>loop:</strong> Fa que el vídeo es reprodueixi en bucle.
-            <br><strong>muted:</strong> Reprodueix el vídeo sense so.
-            <br><video src="https://www.youtube.com/shorts/qqDsX2oHHIw" controls width="400" height="300">
-                El teu navegador no suporta el vídeo.
-                <!-- Aqui he intentat introduir un video pero no funciona-->
-                </video>
-        </p>
-        <h3 id="audiohtml">Audio</h3>
-        <p>
-            Etiqueta <strong>&lt;audio&gt;</strong>
-            <br>De manera similar als vídeos, HTML5 permet inserir àudio natiu amb l'etiqueta &lt;audio&gt;.
-            <br><b>Atributs principals</b>
-            <br><strong>src:</strong> Ruta del fitxer d'àudio.
-            <br><strong>controls:</strong> Mostra els controls de reproducció d'àudio (play, pause, volum, etc.).
-            <br><strong>autoplay:</strong> Reprodueix automàticament l'àudio en carregar la pàgina.
-            <br><strong>loop:</strong> Fa que l'àudio es reprodueixi en bucle.
-            <br><strong>muted:</strong> Reprodueix l'àudio sense so inicialment.
-            <!-- No tenc fitxers d'audio per introduir-->
-        </p>
-        <h3 id="impinfo">Informació important</h3>
-        <p>
-            Proporciona <b>formats de fitxer compatibles</b> amb els diferents navegadors per a àudio i vídeo (com MP4, WebM, OGG).
-            <br>Utilitza l'atribut <b>alt</b> per a les imatges per <b>millorar l'accessibilitat i optimitzar el SEO</b>.
-            <br>No facis ús de l'atribut autoplay en àudio i vídeo, ja que pot interrompre l'experiència de l'usuari, especialment en dispositius mòbils.
-            <br><b>Controla la mida</b> dels fitxers multimèdia per evitar temps de càrrega llargs i millorar l'experiència de l'usuari.
-        </p>
-    <a href="#index3">Torna al INDEX</a>
+                <h2 id="conceptesimportants">Conceptes importants</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3> <b>Herència</b> <br></h3> 
+                        <p>Els fills hereten els estils
+                    dels seus pares, així no cal
+                    que escriguis estils per a tot.</p>
+                    <img src="fotos/herenciacss.PNG" alt="Foto de herenciacss">
+                </div>
+                <div class="contenido">
+                    <h3> <b>Especifitat</b></h3> <br>
+                        <p>Quan hi ha conflictes d'estils, el
+                    navegador aplica només el de més
+                    especificitat. </p>
+                        <img src="fotos/especifitatcss.PNG" alt="Foto especifitatcss">
+                </div>
+                <div class="contenido">
+                    <h3> <b>Cascada</b> <br> </h3> 
+                        <p>Tot estil sobreescriu un d'anterior.
+                    La C de CSS significa Cascada.</p>
+                        <img src="fotos/cascadacss.PNG" alt="Foto cascadacss">
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
 
-    <hr>
-    <h2 id="etiqueta">Etiqueta</h2>
-        <h3 id="center">Etiqueta &lt;center&gt;</h3>
-        <p>
-            L'etiqueta &lt;center&gt; s'utilitzava en versions antigues d'HTML per centrar el contingut dins d'una pàgina web, tant text
-                com imatges o altres elements.
-                <center>Proba de center</center>
-            <br><b>Està obsoleta en HTML5,</b> i s'hauria d'evitar el seu ús. En lloc de &lt;center&gt;, avui dia es fa servir <strong>CSS</strong> per centrar els elements de manera més eficient.
-        </p>
-        <h3 id="div">Etiqueta &lt;div&gt;</h3>
-            <p>
-                L'etiqueta <strong>&lt;div&gt;</strong> (abreviatura de "division") s'utilitza per crear <b>contenidors de bloc en una pàgina HTML</b>. És una etiqueta de nivell de bloc, la qual cosa significa que ocupa tot l'ample disponible i comença en una línia nova.
-                <br>No té significat semàntic en si mateixa; simplement agrupa altres elements, com text, imatges o altres etiquetes, i sol ser estilitzada amb CSS.
-                <br>És útil per organitzar i dissenyar diferents seccions d'una pàgina web.
-                <div>Proba1</div>
-            </p>
-        <h3 id="span">Etiqueta &lt;span&gt;</h3>
-        <p>
-            L'etiqueta <strong>lt;span&gt;</strong>& és una etiqueta inline (en línia) que serveix per <b>estilitzar o manipular</b>> petites porcions de text o contingut dins d'una pàgina. A diferència de &lt;div&gt;, no ocupa tot l'ample disponible, sinó que ocupa només l'espai necessari.
-            <br>També és una etiqueta no semàntica, usada principalment per aplicar estils o funcionalitat a un grup específic d'elements dins d'un text.
-            <p>Aquest és un
-                <span style="color: red;">text en vermell de proba</span>.
-            </p>
-        </p>
-        <h3 id="hr">Etiqueta &lt;hr&gt;</h3>
-        <p>
-            En HTML5, l'ús de <strong>&lt;hr&gt;</strong>l'etiqueta  no és només decoratiu. Té un valor semàntic per indicar un canvi de tema o una ruptura en el flux del document, ajudant tant als motors de cerca com a les eines d'accessibilitat a entendre millor l'estructura del contingut.
-        </p>
-        <h3 id="template">Etiqueta &lt;template&gt;</h3>
-        <p>
-            L'etiqueta <strong>&lt;template&gt;</strong> s'utilitza per definir fragments d'HTML reutilitzables que no es mostren immediatament quan la pàgina es carrega. El contingut dins d'un &lt;template&gt; no s'afegeix al document fins que es manipula explícitament amb JavaScript, cosa que permet crear plantilles que es poden clonar i inserir al DOM de manera dinàmica.
-            <br>Aquest element és ideal quan vols tenir estructures HTML preparades que podràs afegir al document en temps real,sense que aquestes siguin rendides o visibles inicialment. Això proporciona molta flexibilitat per a aplicacions dinàmiques.
-        </p>
-        <h3 id="Iframes">Etiqueta &lt;Iframes&gt;</h3>
-        <p>
-            <strong>&lt;iframe&gt;</strong> (inline frame) és una etiqueta HTML que permet inserir una pàgina HTML dins d'una altra pàgina web. És una manera més moderna i segura d'incrustar contingut extern, com altres pàgines web, vídeos, formularis o mapes, dins d'una pàgina principal.
-            <br>Els iframes s'utilitzen sovint per a continguts dinàmics com vídeos de YouTube, Google Maps, o integracions de serveis externs.
-            <br>L'etiqueta &lt;iframe&gt; es defineix dins del cos del document i es pot personalitzar amb atributs com <b>width, height, src, i frameborder.</b>
-            <br><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ARi_JSTszok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-    <a href="#index3">Torna al INDEX</a>
+            <h2 id="proptextifonts">Propietats de text i fonts</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Propietat font-family</h3>  
+                        <p>La propietat font-family defineix el tipus de lletra (tipografia) que s'utilitzarà per
+                            a un element de text. Pots especificar una o més fonts, i el navegador aplicarà la
+                            primera que estigui disponible al sistema de l'usuari.</p> 
+                </div>
+                <div class="contenido">
+                    <h3>Propietat font-size</h3>
+                        <p>La propietat font-size controla la mida de la lletra. Els valors es poden definir en
+                            diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).</p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat color </h3>
+                        <p>La propietat color defineix el color del text. Es poden utilitzar noms de colors
+                            predefinits, valors en hexadecimal, o el sistema de colors RGB o RGBA.</p>
+                </div>
+            </div>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Propietat text-align</h3>
+                        <p>La propietat text-align s'utilitza per controlar l'alineació del text dins d'un
+                            element. Els valors més comuns són left (esquerra), right (dreta), center
+                            (centrat) i justify (justificat).</p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat font-weight</h3>
+                        <p>La propietat font-weight controla el gruix de la lletra. Els valors comuns són: <br>
+                            normal: per defecte. <br>
+                            bold: text en negreta. <br>
+                            Números entre 100 i 900, on 400 és el valor per defecte i 700 representa
+                            negreta.</p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat font-style</h3>
+                        <p>La propietat font-style controla l'estil de la font, com si el text serà normal o en
+                            cursiva.
+                            Els valors més comuns són: <br>
+                            normal: Text normal. <br>
+                            italic: Text en cursiva. <br>
+                            oblique: Text inclinat.</p>
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
+         
+            <h2 id="margesfarcitsvores">Màrges, farcits i vores en CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Marges (margin)</h3>
+                    <p>Marges (margin)
+                        La propietat margin controla l'espai exterior d'un element, és
+                        a dir, l'espai que hi ha entre un element i els altres elements
+                        que l’envolten. Els marges es poden definir de manera
+                        individual per a cadascun dels quatre costats de l'element
+                        (superior, dret, inferior, esquerre) o de manera global per a
+                        tots els costats alhora.</p><br>
+                        margin-top: 20px; /* Marge superior de 20 píxels */ <br>
+                        margin-bottom: 10px; /* Marge inferior de 10 píxels */ <br>
+                        margin-left: 10px; /* Marge esquerra de 10 píxels */ <br>
+                        margin-right: 10px; /* Marge dret de 10 píxels */ <br>
+                        margin: 10px; /* Aplica un marge de 10 píxels a tots els costats */
+                </div>
+                <div class="contenido">
+                    <h3>Farcits (Padding)</h3>
+                    <p>La propietat padding controla l'espai interior d'un element, és
+                        a dir, l'espai entre el contingut d'un element (com text o
+                        imatges) i les seves vores. Igual que amb els marges, els farcits
+                        es poden definir per a tots els costats o per a cadascun
+                        individualment.</p><br>
+                        padding: 20px; /* Aplica un farcit de 20 píxels a tots els costats */ <br>
+                        padding-left: 15px; /* Aplica un farcit de 15 píxels al costat esquerre */
 
-    <hr>
-    <h2 id="metadades">Metadades</h2>
-    <p>
-        <b>Les metadades són informació que es col·loca dins del document HTML per descriure característiques del document</b> com l'autor, la descripció, les paraules clau o les instruccions per a motors de cerca i navegadors.
-        <br>Les metadades <b>s'inclouen dins de l'etiqueta &lt;head&gt; del document HTML</b>, però no es mostren directament a la pàgina web. Aquestes dades ajuden els navegadors, motors de cerca, i aplicacions a comprendre millor el contingut de la pàgina.
-        <br><strong>Charset (Conjunt de caràcters)</strong>
-        <br>Defineix el conjunt de caràcters utilitzat en el document, com UTF-8, que suporta gairebé tots els caràcters.
-        <br><strong>Viewport (Responsive Design)</strong>
-        <br>Ajuda a configurar la visualització d'una pàgina web en dispositius mòbils, garantint que el contingut s'adapti correctament a diferents mides de pantalla.
-        <br><strong>Descripció de la pàgina</strong>
-        <br>Proporciona una breu descripció del contingut de la pàgina. Aquesta informació és utilitzada pels motors de cerca per mostrar descripcions en els resultats de cerca.
-        <br><strong>Paraules clau (Keywords)</strong>
-        <br>Defineix un conjunt de paraules clau que descriuen el contingut de la pàgina. Encara que no és tan utilitzat pels motors de cerca actualment, pot ser útil per altres aplicacions.
-        <br><strong>Autor de la pàgina</strong>
-        <br>Indica el nom de l'autor o empresa responsable del contingut de la pàgina web.
-        <br><strong>Instruccions per a Robots de Cerca</strong>
-        <br>Indica als motors de cerca com indexar i rastrejar el contingut de la pàgina.
-        <br><strong>Open Graph Tags (per a xarxes socials)</strong>
-        <br>Els Open Graph Tags són metadades utilitzades per les xarxes socials (com Facebook o Twitter) per mostrar previsualitzacions personalitzades quan es comparteix un enllaç.
-        <br><strong>Metadades per a aplicacions mòbils</strong>
-        <br>Pots utilitzar metadades per millorar com es veu la pàgina quan es desa a la pantalla d'inici en un dispositiu mòbil.
-        <br><strong>Favicon</strong>
-        <br>Tot i que no és un &lt;meta&gt;, el favicon és una metadada visual important que es mostra a la pestanya del navegador.
-        <br><strong>lang (atribut)</strong>
-        <br>L'atribut lang es defineix dins de l'etiqueta &lt;html&gt; per especificar l'idioma general de la pàgina, o dins de qualsevol altra etiqueta HTML per marcar un idioma específic dins d'una part del contingut.
-        <br><img src="/fotos/metadadesimp.PNG">
-    </p>
-    <a href="#index3">Torna al INDEX</a>
-</div>
+
+                </div>
+                <div class="contenido">
+                    <h3>Bores (Border)</h3>
+                    <p>La propietat border s'utilitza per afegir una vora al voltant
+                        d'un element. Aquesta propietat té diversos subatributs: <br>
+                        Amplada de la vora (border-width): defineix el gruix de
+                        la vora. <br>
+                        Estil de la vora (border-style): pot ser solid (sòlid),
+                        dashed (ratllat), dotted (puntets), etc. <br>
+                        color de la vora (border-color): especifica el color de la
+                        vora.</p>
+                </div>
+            </div> 
+
+            <h2 id="unitatscomunes">Unitats comunes</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h4>Píxels (px):</h4>
+                        <p>Unitat fixa, representa un punt a la pantalla. <br>
+                        Exemple: margin: 20px; <br> <br>
+                    <h4>Ems (em):</h4> 
+                        Unitat relativa a la mida de la font de l'element pare. <br>
+                        Exemple: padding: 2em; (2 vegades la mida de la font). <br><br>
+                    <h4>Rems (rem):</h4> 
+                        Unitat relativa a la mida de la font de l'element arrel (html). <br>
+                        Exemple: margin: 1.5rem; (1.5 vegades la mida de la font arrel). <br><br>
+                    <h4>Percentatge (%):</h4> 
+                        Relativa a l'amplada o alçada del contenidor pare. <br>
+                        Exemple: padding: 5%; (5% de l'amplada del contenidor). <br><br>
+                    <h4>Viewports (vw, vh):</h4> 
+                        Relativa a la mida de la finestra visible. <br>
+                        Exemple: margin: 5vw; (5% de l'amplada del viewport). <br><br>
+                    <h4>Vores (border-width):</h4>
+                        Gruixos predeterminats: thin, medium, thick o valors com px. <br>
+                        Exemple: border: thick solid black;</p>
+
+                </div>
+                <div class="imgcontenido">
+                    <img src="fotos/medidascss.PNG" alt="Foto medidas CSS" width="100%">
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
+            
+            <h2 id="colorsifons">Colors i fons en CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Propietat color</h3>
+                    <p>La propietat color s’utilitza per canviar el color del text dins d’un
+                        element. <br>
+                        Pots definir els colors de diverses maneres: <br>
+                        Noms de colors: utilitzar noms predefinits com red, blue,
+                        green, etc. <br>
+                        Colors hexadecimals: utilitzar un codi hexadecimal que
+                        comença amb # seguit de sis caràcters (exemple: #FF0000
+                        per a vermell). <br>
+                        RGB: utilitzar valors de rgb() on cada component (vermell,
+                        verd, blau) s’especifica entre 0 i 255. <br>
+                        RGBA: igual que rgb(), però amb un quart valor per a l'opacitat
+                        (valors entre 0.0 i 1.0). <br>
+                    </p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat background-color</h3>
+                    <p>La propietat background-color s’utilitza per establir el color de fons
+                        d’un element. Igual que la propietat color, pots definir colors
+                        utilitzant noms, valors hexadecimals, RGB o RGBA.</p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat background</h3>
+                    <p>La propietat background és una manera abreujada d’especificar
+                        diverses propietats de fons alhora, com el color, la imatge de
+                        fons, la repetició, la posició, etc.</p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietat background-image</h3>
+                    <p>Aquesta propietat permet afegir una imatge com a fons d'un
+                        element. 
+                        <br>Pots especificar la ubicació de la imatge amb una URL. <br>
+                        Si vols que la imatge es repeteixi o es mostri d'una altra manera,
+                        pots utilitzar altres propietats complementàries: <br>
+                        background-repeat: Controla si la imatge de fons es repeteix.
+                        Els valors poden ser repeat, no-repeat, repeat-x
+                        (horitzontalment) o repeat-y (verticalment). <br>
+                        background-position: Defineix la posició de la imatge de fons
+                        (per exemple, center, top, left). <br>
+                        background-size: Permet ajustar la mida de la imatge (per
+                        exemple, cover o contain per adaptar-se a la mida de
+                        l'element).</p>
+                </div>
+            </div> 
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
+
+            <h2 id="dimensionsicaixescss">Dimensions i caixes en CSS</h2>
+            <div class="capsulacontenido">
+                    <div class="contenidounico">
+                    <p>El CSS utilitza el model de caixa per representar els elements d'una pàgina web. Cada element es considera com una
+                    caixa rectangular que conté el contingut, farcits, marges i vores. És important entendre aquest model perquè
+                    controla com es distribueixen i s'ajusten els elements dins de la pàgina. <br>
+                    El model de caixa es compon de quatre parts principals: <br>
+                    Contingut: El contingut real de l'element, com text, imatges o altres elements. <br>
+                    Farcit (padding): L'espai entre el contingut i la vora. <br>
+                    Vora (border): El límit al voltant del farcit. <br>
+                    Marge (margin): L'espai extern entre la vora i altres elements.</p>
+                    </div>
+                </div>
+
+            <h2 id="propietatscss">Propietats</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Propietats de dimensions (width i height)</h3>
+                    <p>Les propietats width (amplada) i height (alçada) s’utilitzen per definir la mida d’un element. Aquests valors es
+                        poden definir en unitats fixes com píxels (px) o unitats relatives com percentatges (%), que depenen de la mida del
+                        seu element contenidor.</p> <br>
+                        <img src="fotos/widhtheight.PNG" alt="Foto widht y height">
+
+                </div>
+                <div class="contenido">
+                    <h3>El model de caixa en CSS</h3>
+                    <p>El model de caixa estableix com es calculen les dimensions d'un element tenint en compte les propietats de marges, farcits, i vores. Per
+                        defecte, la mida de width i height només afecta el contingut. Per incloure el farcit i la vora dins de les dimensions de l'element, es pot utilitzar
+                        la propietat box-sizing.</p>
+                    <h3>Propietat box-sizing</h3>
+                    <p>La propietat box-sizing controla com es calculen les dimensions totals de l’element. Hi ha dues opcions principals:
+                        content-box (valor per defecte): Només inclou el contingut en les dimensions, mentre que les vores i els farcits s'afegeixen a part.
+                        border-box: Inclou el contingut, el farcit i la vora dins de les dimensions especificades.</p> <br>
+                        <img src="fotos/boxsizing.PNG" alt="Foto ejemplo box-sizing">
+                </div>
+                <div class="contenido">
+                    <h3>Control del desbordament (overflow)</h3>
+                    <p>Quan el contingut d'un element és més gran que les dimensions especificades, el CSS ofereix la propietat overflow per controlar com es
+                        mostra el contingut que desborda.</p> <br>
+                    <p>Els valors més comuns són:
+                        visible: El contingut que desborda es mostra fora de l’element (valor per defecte).
+                        hidden: El contingut que desborda es retalla i no es mostra.
+                        scroll: Mostra barres de desplaçament, encara que el contingut no desbordi.
+                        auto: Mostra barres de desplaçament només si el contingut desborda.  </p> <br>
+                        <img src="fotos/overflow.PNG" alt="Foto ejemplo overflow">
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
+
+            <h2 id="posicionamentbasiccss">Posicionament bàsic en CSS</h2>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>La propietat position</h3>
+                    <p>La propietat position permet especificar el mètode de posicionament d’un element. Els valors més comuns són: <br>
+                    static (per defecte): Els elements es posicionen de manera normal, seguint el flux del document. No es pot ajustar manualment amb
+                    coordenades. <br>
+                    relative: Es posiciona l'element respecte a la seva posició original en el flux del document. Es poden utilitzar coordenades per moure’l
+                    lleugerament (dalt, baix, esquerra o dreta). <br>
+                    absolute: L'element es treu del flux del document i es posiciona respecte al seu element contenidor més proper que tingui una posició
+                    definida. Si no hi ha cap contenidor definit, es posiciona respecte a la pàgina. <br>
+                    fixed: L'element es treu del flux del document i es posiciona respecte a la finestra del navegador. Es manté fix fins i tot quan l'usuari fa
+                    desplaçaments. <br>
+                    sticky: L'element es comporta com relative fins que arriba a un punt en el desplaçament de la pàgina, després del qual es comporta
+                    com fixed. <br></p>
+                </div>
+                <div class="contenido">
+                    <h3>Propietats de posicionament (top, right, bottom, left)</h3>
+                    <p>Quan es defineix la propietat position com relative, absolute, fixed o sticky, pots utilitzar les propietats top, right, bottom, i left per
+                        especificar la distància de l'element respecte als seus límits.</p> <br>
+                        <img src="fotos/propietatposicionament.PNG" alt="Foto propietats de posicionament">
+
+                </div>
+                <div class="contenido">
+                    <h3>Posicionament absolut (position: absolute)</h3>
+                    <p>Amb position: absolute, l'element es treu completament del flux
+                        normal del document i es posiciona respecte al seu element
+                        contenidor més proper amb position: relative, absolute, o fixed.</p> <br>
+                        <img src="fotos/posicionamentabsolut.PNG" alt="Foto de posicionament absolut">
+
+                </div>
+            </div>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Posicionament fix (position: fixed)</h3>
+                    <p>Els elements amb position: fixed es mantenen en una ubicació fixa
+                        a la pantalla fins i tot quan l'usuari fa desplaçaments. Es
+                        posicionen respecte a la finestra del navegador.</p><br>
+                        <img src="fotos/posicionamentfix.PNG" alt="Foto de posicionament fix">
+
+                </div>
+                <div class="contenido">
+                    <h3>Posicionament enganxós (position: sticky)</h3>
+                    <p>Els elements amb position: sticky es comporten com relative fins
+                        que l'usuari es desplaça per la pàgina i arriba a un punt
+                        especificat, després del qual l'element es comporta com fixed.</p> <br>
+                        <img src="fotos/posicionamentenganxos.PNG" alt="Foto posicionament sticky">
+
+                </div>
+                <div class="contenido">
+                    <h3>Propietat z-index</h3>
+                    <p>La propietat z-index es fa servir per controlar l'ordre de
+                    superposició dels elements posicionats (relative, absolute, fixed o
+                    sticky). Els valors més alts de z-index col·loquen l'element davant
+                    d'altres elements amb valors inferiors.</p> <br>
+                    <img src="fotos/z-index.PNG" alt="Foto z-index">
+                </div>
+            </div>
+            <a class="botoindex" href="#index1">Torna al INDEX</a>
+
+            <h2 id="flexbox">Disseny bàsic amb Flexbox</h2>
+            <div class="capsulacontenido">
+                <div class="contenidounico">
+                <p>Flexbox és un sistema de disseny en CSS que proporciona una manera molt eficient de distribuir l'espai entre els
+                    elements i alinear-los dins d'un contenidor, fins i tot quan la mida dels elements és desconeguda o dinàmica. Flexbox
+                    és ideal per crear dissenys de pàgines adaptatives, ja que facilita l'alineació, distribució i ordenació dels elements
+                    dins d'un contenidor.</p>
+                </div>
+            </div>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>El contenidor flex (display: flex)</h3>
+                    <p>El punt de partida per utilitzar Flexbox és establir display: flex en
+                        l'element contenidor. Aquest contenidor es coneix com a contenidor
+                        flex, i els seus elements fills es coneixen com a elements flex. Un cop
+                        activat el display: flex, pots utilitzar diverses propietats per ajustar com
+                        es distribueixen els elements dins del contenidor.</p>
+                        <img src="fotos/flexbox.PNG" alt="Foto creacion flexbox">
+                </div>
+                <div class="contenido">
+                    <h3>Direcció del flux (flex-direction)</h3>
+                    <p>Per defecte, els elements flex es disposen en fila horitzontalment. <br>
+                        Potscanviar la direcció amb la propietat flex-direction. <br>
+                        Els valors més comuns són: <br>
+                        row: Els elements es col·loquen en fila (horitzontal) (valor per
+                        defecte). <br>
+                        row-reverse: Els elements es col·loquen en fila però en ordre
+                        invers. <br>
+                        column: Els elements es col·loquen en columna (vertical). <br>
+                        column-reverse: Els elements es col·loquen en columna però en
+                        ordre invers.</p>
+                </div>
+            </div>
+                <div class="capsulacontenido">
+                    <div class="contenido">
+                        <h3>Alineació horitzontal (justify-content)</h3>
+                        <p>La propietat justify-content controla l'alineació dels elements al llarg de
+                            l'eix principal (horitzontal per defecte). Pots distribuir els elements flex de
+                            diferents maneres dins del contenidor. <br>
+                            Els valors més comuns són: <br>
+                            flex-start: Els elements s'alineen al començament del contenidor. <br>
+                            flex-end: Els elements s'alineen al final del contenidor. <br>
+                            center: Els elements es centren dins del contenidor. <br>
+                            space-between: Es distribueixen uniformement amb espai entre ells. <br>
+                            space-around: Els elements tenen espai al voltant de cadascun.
+                        </p>
+                    </div>
+                    <div class="contenido">
+                        <h3>Alineació vertical (align-items)</h3>
+                        <p>La propietat align-items controla l'alineació dels elements al llarg de l'eix
+                            transversal (vertical si la direcció és horitzontal). Aquesta propietat
+                            determina com s'alineen els elements flex dins del contenidor en relació
+                            amb la seva alçada. <br>
+                            Els valors més comuns són: <br>
+                            stretch: Els elements s'estiren per omplir el contenidor (valor per
+                            defecte). <br>
+                            flex-start: Els elements s'alineen a la part superior del contenidor. <br>
+                            flex-end: Els elements s'alineen a la part inferior del contenidor. <br>
+                            center: Els elements es centren verticalment dins del contenidor. <br>
+                            baseline: Els elements s'alineen segons la seva línia de base de text.</p>
+
+                    </div>
+                    <div class="contenido">
+                        <h3>Control de l'espai que ocupa cada element (flex-grow)</h3>
+                        <p>La propietat flex-grow especifica com els elements flex creixen dins del contenidor per ocupar l'espai disponible. Cada element es pot assignar
+                            un valor numèric que indica quant ha de créixer en relació amb els altres elements. Si tots els elements tenen flex-grow: 1, l'espai disponible
+                            es distribuirà de manera uniforme.</p>
+
+                    </div>
+                </div>
+                <a class="botoindex" href="#index1">Torna al INDEX</a> 
+
+            <h2 id="mediaqueries">Media Queries (Introducció)</h2>  
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Què són les Media Queries?</h3>
+                    <p>Una media query és una condició que s'afegeix al CSS
+                        per aplicar regles d'estil només quan es compleixin
+                        certes característiques del dispositiu o de la finestra
+                        del navegador. L'exemple més comú és aplicar estils
+                        diferents en funció de l'amplada de la pantalla.</p>
+                        <img src="fotos/mediaqueri.PNG" alt="Foto creacion media queri">
+                </div>
+                <div class="contenido">
+                    <h3>Aplicació bàsica de Media Queries per a pantalles de diferent mida</h3>
+                    <p>Un ús típic de les media queries és adaptar el disseny a diferents
+                        amplades de pantalla. Per exemple, pots ajustar els estils per a
+                        pantalles grans i petites.
+                    </p>
+                    <img src="fotos/mediaqueriaapp.PNG" alt="Foto Mediaqueri">
+                </div>
+            </div>
+            <div class="capsulacontenido">
+                <div class="contenido">
+                    <h3>Tipus de condicions més comunes en les Media Queries</h3>
+                    <p>Amplada de la pantalla (min-width i max-width)
+                        Aquestes condicions s'utilitzen per aplicar estils quan la finestra del
+                        navegador té una amplada mínima (min-width) o màxima (max-width).</p> <br>
+                    <p>Altura de la pantalla (min-height i max-height)
+                        Aquestes condicions funcionen de manera similar a les d'amplada,
+                        però es basen en l'altura de la finestra.</p> <br>
+                    <p>Orientació de la pantalla (orientation)
+                        Pots utilitzar la condició orientation per aplicar estils diferents si la
+                        pantalla està en orientació horitzontal (landscape) o vertical (portrait).</p>
+                </div>
+                <div class="contenido">
+                    <img src="fotos/ampladaqueri.PNG" alt="amplada queri" width=100%>
+                    <img src="fotos/alturaqueri.PNG" alt="altura queri" width=100%>
+                    <img src="fotos/orientacioqueri.PNG" alt="orientacioqueri queri" width=100%>
+                </div>
+            
+            </div> 
+            <a class="botoindex" href="#index1">Torna al INDEX</a>           
+        </div>
+        <div class="footer">
+            <div class="imagenfooter">
+                
+            </div>
+            <div class="textofooter">
+                <h2>Daniel Nevado</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam earum aliquid dignissimos architecto, omnis cupiditate in rerum sapiente ipsum saepe tenetur. Nihil esse porro obcaecati, ratione veniam incidunt quisquam sequi culpa itaque animi quidem sit modi dicta voluptate libero nisi, maiores debitis molestiae quaerat. Voluptate harum temporibus rerum. Quia, facilis?
+                </p>
+            </div>
+
+        </div>
+        
+
+    </div>
+
 </body>
 </html>

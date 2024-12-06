@@ -15,7 +15,7 @@ color: black;
     display: flex;
     justify-content: space-between;
 }
-.cabecera > .contenido {
+.cabecera > .contenidos {
     padding: 1%;
 }
 
@@ -42,7 +42,7 @@ color: black;
 
 .contenedor > div{
     display: block;
-    padding: 20px;
+    padding: 0px;
     color: black;
     
 }
@@ -55,11 +55,52 @@ color: black;
     border-color: rgb(110, 114, 114);
     
 }
-.htmltitulo > h2 {
+a{
+   
+    text-decoration: none;
+}
+.btn {
+    border: none; 
+    border-radius: 20px;
+    color: rgb(0, 0, 0); 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  .btn-block{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+.html {background-color: rgb(196, 204, 204)} 
+.html:hover {background: rgb(240, 243, 243)}
+.css {background-color: rgb(176, 218, 192)} 
+.css:hover {background:rgb(6, 223, 89);}
+.javascript {background-color: rgb(149, 229, 229)} 
+.javascript:hover {background:rgb(16, 233, 233);}
+.extra {background-color: rgb(223, 203, 224)} 
+.extra:hover {background:rgb(216, 64, 224);}
+
+.titulos {
     justify-content: center;
-    margin-top: 35px;
     font-size: 80px;
     font-weight:900;
+}
+.titulosreducido{
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight:900; 
+    height:100px;
+    text-align: center;
+}
+.subtitulos {
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight:300; 
+    height:100px;
+    text-align: center;
 }
 .contenedor .csstitulo{
     background-color: rgb(176, 218, 192);
@@ -91,7 +132,7 @@ color: black;
     font-size:60px;
     font-weight:900;
 }
-.contenedor .conclusionstitulo{
+.contenedor .extratitulo{
     background-color: rgb(223, 203, 224);
     border-radius: 20px;
     text-align: center;
