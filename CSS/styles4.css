@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: rgb(235, 223, 225);
+color: black;
+
+}
+
+.cabecera {
+    width: 100%;
+    background-color: rgba(119, 65, 2, 0.308);
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera > .contenido {
+    padding: 1%;
+}
+
+/* Contenedor basico creacion */
+.contenedor {
+    width: 90%;
+    margin: auto;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    align-items: stretch;
+    justify-items: stretch;
+    margin-top: 100px;
+}
+
+/* Contenedor css grid */
+.contenedor { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-gap: 50px
+    
+}
+
+.contenedor > div{
+    display: block;
+    padding: 20px;
+    color: black;
+    
+}
+.contenedor .htmltitulo{
+    background-color:  rgb(196, 204, 204);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(110, 114, 114);
+    
+}
+.htmltitulo > h2 {
+    justify-content: center;
+    margin-top: 35px;
+    font-size: 80px;
+    font-weight:900;
+}
+.contenedor .csstitulo{
+    background-color: rgb(176, 218, 192);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(109, 133, 118);
+    
+}
+.csstitulo > h2 {
+    justify-content: center;
+    margin-top: 35px;
+    font-size: 80px;
+    font-weight:900;
+}
+.contenedor .javascripttitulo{
+    background-color: rgb(149, 229, 229);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(91, 136, 136);
+    
+}
+.javascripttitulo > h2 {
+    justify-content: center;
+    margin-top: 35px;
+    font-size:60px;
+    font-weight:900;
+}
+.contenedor .conclusionstitulo{
+    background-color: rgb(223, 203, 224);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(140, 129, 141);
+    
+}
+.conclusionstitulo > h2 {
+    justify-content: center;
+    margin-top: 35px;
+    font-size:80px;
+    font-weight:900;
+}
