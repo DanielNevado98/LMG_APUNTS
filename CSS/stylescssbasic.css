@@ -7,6 +7,7 @@ body {
 background-color: rgb(235, 223, 225);
 color: black;
 line-height: 30px;
+font-size: larger;
 
 }
 .cabecera {
@@ -24,7 +25,7 @@ line-height: 30px;
 
     width: 90%;
     max-width: 2000px;
-    border: 10px solid black;
+    border: 10px solid rgb(122, 55, 55);
     margin: auto;
     text-align: center;
 }
